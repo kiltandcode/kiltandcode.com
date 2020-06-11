@@ -1,0 +1,12 @@
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-ID: 'UA-140918235-1'
+
+# Menu
+menu:
+- {name: 'About me', url: 'about'}
+- {name: 'Articles', url: 'articles'}
+
+# Pagination
+pagination:
+  next_page: 'Newer'
+  previous_page: 'Older'

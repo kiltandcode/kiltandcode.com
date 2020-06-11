@@ -1,0 +1,11 @@
+{% assign callout = include.callout | default : 'bs-callout-primary' %}
+{% assign header = include.header | default : '' %}
+
+<div class="bs-callout {{ callout }}">
+
+    {% if header.size > 0 %}
+        <h4>{{ header }}</h4>
+    {% endif %}
+    
+    {{ include.content }}
+</div>

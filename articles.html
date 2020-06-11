@@ -1,0 +1,20 @@
+---
+layout: page
+title: Articles
+---
+
+{% for post in site.posts %}
+    <div class="mb-4 mt-4">
+        <h4>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h4>
+        
+        {%
+            include written-on.html
+            date=post.date
+            author=post.author
+        %}
+
+        <hr />
+    </div>
+{% endfor %}

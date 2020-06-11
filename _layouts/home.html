@@ -1,0 +1,55 @@
+---
+layout: default
+title: Home
+---
+
+{% for post in paginator.posts %}
+    <article class="mb-4">
+        <h1>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </h1>
+
+        {%
+            include written-on.html
+            date=post.date
+            author=post.author
+        %}
+
+        {% if post.image %}
+            <figure class="figure w-75 mx-auto d-block mt-4 mb-4">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" class="figure-img img-fluid rounded mx-auto d-block" />
+                </a>
+            </figure>
+        {% endif %}
+        
+        {{ post.content | strip_html | truncate: 350 }}
+        
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <a class="btn btn btn-outline-secondary" href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+            </div>
+        </div>
+    </article>
+{% endfor %}
+
+<!-- Pagination links -->
+<ul class="list-inline text-center">
+    <li class="list-inline-item">
+        {% if paginator.next_page %}
+        <a class="btn btn btn-outline-secondary" href="{{ site.baseurl }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>
+        {% else %}
+        <a class="disabled btn btn btn-outline-secondary">{{ site.data.settings.pagination.previous_page }}</a>
+        {% endif %}
+    </li>
+
+    <li class="list-inline-item">
+        {% if paginator.previous_page %}
+        <a class="btn btn btn-outline-secondary" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
+        {% else %}
+        <a class="disabled btn btn btn-outline-secondary">{{ site.data.settings.pagination.next_page }}</a>
+        {% endif %}
+    </li>
+</ul>

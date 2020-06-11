@@ -1,0 +1,57 @@
+/* Include the Rouge theme for code 
+syntax highlighting */
+@import url('base16.dark.css');
+
+/* Include custom Bootstrap callout
+https://cpratt.co/twitter-bootstrap-callout-css-styles/
+*/
+@import url('bs-callout.css');
+
+/* Include Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Override the default Bootstrap theme */
+html, body {
+  color: #515151;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Override the default Bootstrap headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #333 !important;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  color: #333 !important;
+}
+
+/* Override the default Rouge theme */
+.highlighter-rouge {
+  margin-bottom: 2rem;
+}
+
+.highlighter-rouge .highlight {
+  border-radius: 0.5rem;
+  margin-bottom: 0;
+  padding: 0.5rem;
+}
+
+/* Font for logo */
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+/* Social icons */
+.social a {
+  color: rgba(0,0,0,.5);
+}
+
+.social a:hover {
+  color: rgba(0,0,0,.7);
+}

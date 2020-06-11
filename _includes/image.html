@@ -1,0 +1,18 @@
+<figure class="figure w-75 mx-auto d-block mt-4 mb-4">
+
+    {% assign month = include.month | default : '' %}
+    {% assign year = include.year | default : '' %}
+
+    {% if month.size > 0 and year.size > 0 %}
+        <img src="{{ site.baseurl }}/assets/img/{{ year }}/{{ month }}/{{ include.file }}" alt="{{ include.alt }}" class="figure-img img-fluid rounded mx-auto d-block" />
+    {% else %}
+        <img src="{{ site.baseurl }}/assets/img/{{ include.file }}" alt="{{ include.alt }}" class="figure-img img-fluid rounded mx-auto d-block" />
+    {% endif %}
+
+    {% assign caption = include.caption | default : '' %}
+
+    {% if caption.size > 0 %}
+        <figcaption class="figure-caption text-center">{{ caption }}</figcaption>
+    {% endif %}
+
+</figure>
