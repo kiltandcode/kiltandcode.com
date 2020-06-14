@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: About
 ---
 
 In case you were wondering, I'm a full-stack software developer specializing in Microsoft languages and platforms such as .NET, C# and Azure. I also enjoy writing articles for this website, [kiltandcode.com](https://kiltandcode.com)

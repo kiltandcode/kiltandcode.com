@@ -3,7 +3,7 @@ google-ID: 'UA-140918235-1'
 
 # Menu
 menu:
-- {name: 'About me', url: 'about'}
+- {name: 'About', url: 'about'}
 - {name: 'Articles', url: 'articles'}
 
 # Pagination

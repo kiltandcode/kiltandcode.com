@@ -41,12 +41,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   padding: 0.5rem;
 }
 
-/* Font for logo */
-.montserrat {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-}
-
 /* Social icons */
 .social a {
   color: rgba(0,0,0,.5);
