@@ -7,7 +7,7 @@ image: /assets/img/2020/06/powershell-logo.png
 categories: jekyll powershell
 ---
 
-<img src="{{ site.baseurl }}/assets/img/2020/06/powershell-logo.png" alt="Powershell logo" class="img-fluid float-right ml-2 mb-2" />
+<img src="{{ site.baseurl }}/assets/img/2020/06/powershell-logo.png" alt="Powershell logo" class="img-fluid float-right ml-1 mb-1" />
 
 When I moved my website from WordPress to Jekyll, a lot of unnecessary images were transferred over that were 
 increasing the size of the GitHub repository by as much as 40%.
