@@ -7,7 +7,7 @@ image: /assets/img/2020/06/angular-logo.png
 category: angular
 ---
 
-<img src="{{ site.baseurl }}/assets/img/2020/06/angular-logo.png" alt="Angular logo" class="img-fluid float-right ml-2 mb-2" />
+<img src="{{ site.baseurl }}/assets/img/2020/06/angular-logo.png" alt="Angular logo" class="img-fluid float-right ml-1 mb-1" />
 
 Roughly a year ago I was beginning a new job where one of the requirements was to use [Angular](https://angular.io/) on a daily basis. There was only one problem, I'd never used Angular before. I'd been honest in the interview, saying I'd had a brief introduction to the [React](https://reactjs.org/) framework, but not Angular. Thankfully they were understanding and I was expected to learn on the job.
 
