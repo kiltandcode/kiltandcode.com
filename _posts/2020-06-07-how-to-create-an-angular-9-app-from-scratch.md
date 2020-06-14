@@ -3,23 +3,17 @@ title: "How to Create an Angular 9 App From Scratch"
 date: 2020-06-07 18:55:00 +00:00
 author: "Steven McLintock"
 layout: post
-image: /assets/img/2020/06/angular-banner.png
+image: /assets/img/2020/06/angular-logo.png
 category: angular
 ---
+
+<img src="{{ site.baseurl }}/assets/img/2020/06/angular-logo.png" alt="Angular logo" class="img-fluid float-right ml-2 mb-2" />
 
 Roughly a year ago I was beginning a new job where one of the requirements was to use [Angular](https://angular.io/) on a daily basis. There was only one problem, I'd never used Angular before. I'd been honest in the interview, saying I'd had a brief introduction to the [React](https://reactjs.org/) framework, but not Angular. Thankfully they were understanding and I was expected to learn on the job.
 
 As developers, we're often capable of learning new frameworks in a relatively short amount of time. This is particularly true if we have a feature-rich application at our disposal that is already using this framework, but what about its foundations? If asked, would we know why we're using that framework? And could we build something from scratch using it?
 
 ## What is Angular?
-
-{%
-    include image.html
-    year='2020'
-    month='06'
-    file='angular-banner.png'
-    alt='Angular Logo'
-%}
 
 **Angular is a framework for building front-end web apps**, commonly used to build [Single Page Applications](https://blog.angular-university.io/why-a-single-page-application-what-are-the-benefits-what-is-a-spa/) *(SPAs)*. A Single Page Application will aim to replicate the capabilities of a desktop or mobile app within the browser, dynamically loading new content instead of refreshing the page. A few examples of Single Page Applications are [Gmail](https://www.google.com/gmail/), [Trello](https://trello.com/) and [Netflix](https://www.netflix.com/) *(the browser version)*.
 
