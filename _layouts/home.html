@@ -4,23 +4,29 @@ title: Home
 ---
 
 {% for post in paginator.posts %}
-    <article>
-        <h1>
+    <article class="clearfix mb-4">
+        <h3>
             <a href="{{ site.baseurl }}{{ post.url }}">
                 {{ post.title }}
             </a>
-        </h1>
+        </h3>
 
         {%
             include written-on.html
             date=post.date
             author=post.author
         %}
-        
-        {{ post.content }}
-    </article>
 
-    <hr class="mt-4 mb-4" />
+        {% if post.image %}
+            <section style="width: 150px;" class="float-left mr-4 mb-4">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" class="img-fluid rounded" />
+                </a>
+            </section>
+        {% endif %}
+        
+        {{ post.content | strip_html | truncate: 200 }} <a href="{{ site.baseurl }}{{ post.url }}">read more</a>
+    </article>
 {% endfor %}
 
 <!-- Pagination links -->
