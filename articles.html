@@ -9,12 +9,13 @@ title: Articles
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h4>
         
-        {%
-            include written-on.html
-            date=post.date
-            author=post.author
-        %}
-
+        <div class="text-secondary small mb-4">
+            {%
+                include written-on.html
+                date=post.date
+            %}
+        </div>
+        
         <hr />
     </div>
 {% endfor %}

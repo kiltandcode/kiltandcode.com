@@ -7,11 +7,13 @@ layout: default
     {{ page.title }}
   </h1>
 
-  {%
-    include written-on.html
-    date=page.date
-    author=page.author
-  %}
+  <div class="text-secondary small mb-4">
+    {%
+      include written-on.html
+      date=page.date
+      author=page.author
+    %}
+  </div>
   
   {{ content }}
 </article>
