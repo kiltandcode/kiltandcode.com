@@ -12,15 +12,12 @@ https://cpratt.co/twitter-bootstrap-callout-css-styles/
 
 /* Override the default Bootstrap theme */
 html, body {
-  color: #515151;
   font-family: 'Montserrat', sans-serif;
 }
 
 /* Override the default Bootstrap headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
   font-family: 'Eczar', serif;
-  /*font-weight: bold;*/
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
