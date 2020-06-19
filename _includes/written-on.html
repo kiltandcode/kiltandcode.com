@@ -1,7 +1,7 @@
 {% assign date = include.date %}
 {% assign author = include.author %}
 
-<time>
+<time datetime="{{ date | date_to_xmlschema }}">
   Written on
   {% assign d = date | date: "%-d"  %}
   {{ date | date: "%B" }}

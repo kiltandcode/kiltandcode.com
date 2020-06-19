@@ -1,14 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>
-      {% if page.title == "Home" %}
-        {{ site.title }} | {{ site.description }}
-      {% else %}
-        {{ page.title }} | {{ site.title }}
-      {% endif %}
-    </title>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
-    <!-- Use Jekyll SEO plugin -->
+    <!-- Use Jekyll SEO plugin (inc. title tag) -->
     {% seo %}
   </head>
 
@@ -52,7 +44,6 @@
               {% else %}
                 <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.name }}</a></li>
               {% endif %}
-            </li>
             {% endfor %}
           </ul>
         </div>

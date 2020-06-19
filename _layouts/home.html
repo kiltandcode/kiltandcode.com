@@ -8,11 +8,11 @@ title: Home
         <div class="card shadow">
             <div class="card-body">
                 {% if post.image %}
-                    <section style="width: 150px;" class="mb-4 mx-auto">
+                    <div style="width: 150px;" class="mb-4 mx-auto">
                         <a href="{{ site.baseurl }}{{ post.url }}">
                             <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" class="img-fluid rounded" />
                         </a>
-                    </section>
+                    </div>
                 {% endif %}
 
                 <h5 class="card-title">
