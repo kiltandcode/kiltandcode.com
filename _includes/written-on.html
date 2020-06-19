@@ -1,22 +1,18 @@
 {% assign date = include.date %}
 {% assign author = include.author %}
 
-<div class="text-secondary small mb-4">
-    <time>
-      Written on
-      {% assign d = date | date: "%-d"  %}
-      {{ date | date: "%B" }}
-      {% case d %}
-        {% when '1' or '21' or '31' %}{{ d }}st
-        {% when '2' or '22' %}{{ d }}nd
-        {% when '3' or '23' %}{{ d }}rd
-        {% else %}{{ d }}th{% endcase %},
-      {{ date | date: "%Y" }}
-    </time>
-    by
-    {% if author %}
-      {{ author }}
-    {% else %}
-      {{ site.author }}
-    {% endif %}
-  </div>
+<time>
+  Written on
+  {% assign d = date | date: "%-d"  %}
+  {{ date | date: "%B" }}
+  {% case d %}
+    {% when '1' or '21' or '31' %}{{ d }}st
+    {% when '2' or '22' %}{{ d }}nd
+    {% when '3' or '23' %}{{ d }}rd
+    {% else %}{{ d }}th{% endcase %},
+  {{ date | date: "%Y" }}
+</time>
+
+{% if author.size > 0 %}
+  by {{ author }}
+{% endif %}
