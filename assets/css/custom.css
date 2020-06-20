@@ -7,19 +7,6 @@ https://cpratt.co/twitter-bootstrap-callout-css-styles/
 */
 @import url('bs-callout.css');
 
-/* Include Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-/* Override the default Bootstrap theme */
-html, body {
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Override the default Bootstrap headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Eczar', serif;
-}
-
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #333 !important;
 }
