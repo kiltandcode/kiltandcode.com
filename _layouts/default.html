@@ -71,17 +71,19 @@
 
                     <ul class="list-inline text-center social">
                       <li class="list-inline-item">
-                          <a href="https://www.github.com/kiltandcode" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="mailto:steven@kiltandcode.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                       </li>
                       <li class="list-inline-item">
-                          <a href="https://twitter.com/kiltandcode" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="http://www.linkedin.com/in/kiltandcode/" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                       </li>
                       <li class="list-inline-item">
-                          <a href="http://www.linkedin.com/in/kiltandcode/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                          <a href="https://www.github.com/kiltandcode" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
                       </li>
                       <li class="list-inline-item">
-                          <a href="mailto:steven@kiltandcode.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                          <a href="{{ site.baseurl }}/feed.xml" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a>
                       </li>
+
+
                   </ul>
               </div>
             </div>
@@ -98,8 +100,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    {% if jekyll.environment == "production" %}
+    
     <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -110,6 +111,5 @@
         ga('create', '{{ site.data.settings.google-ID }}', 'auto');
         ga('send', 'pageview');
     </script>
-    {% endif %}
   </body>
 </html>

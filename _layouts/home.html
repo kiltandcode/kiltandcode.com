@@ -3,40 +3,24 @@ layout: default
 title: Home
 ---
 
-<div class="card-columns mb-4">
-    {% for post in paginator.posts %}
-        <div class="card shadow">
-            <div class="card-body">
-                {% if post.image %}
-                    <div style="width: 150px;" class="mb-4 mx-auto">
-                        <a href="{{ site.baseurl }}{{ post.url }}">
-                            <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" class="img-fluid rounded" />
-                        </a>
-                    </div>
-                {% endif %}
+{% for post in paginator.posts %}
+    <h3>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </h3>
+    
+    <div class="text-secondary small mb-3">
+        {%
+            include written-on.html
+            date=post.date
+        %}
+    </div>
 
-                <h5 class="card-title">
-                    <a href="{{ site.baseurl }}{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h5>
-                <p class="card-text">
-                    <small>
-                        {{ post.content | strip_html | truncate: 200 }} <a href="{{ site.baseurl }}{{ post.url }}">read more</a>
-                    </small>
-                </p>
-                <p class="card-text">
-                    <small class="text-muted">
-                        {%
-                            include written-on.html
-                            date=post.date
-                        %}
-                    </small>
-                </p>
-            </div>
-        </div>
-    {% endfor %}
-</div>
+    <p>
+        {{ post.content | strip_html | truncate: 200 }} <a href="{{ site.baseurl }}{{ post.url }}">read more</a>
+    </p>
+    
+    <hr class="mb-4 mt-4" />
+{% endfor %}
 
 <!-- Pagination links -->
 <ul class="list-inline text-center">

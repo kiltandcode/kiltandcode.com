@@ -16,5 +16,5 @@ description:	       'A blog by Steven McLintock'
 author:              'Steven McLintock'
 
 # Pagination
-paginate:             6
+paginate:             5
 paginate_path:        '/page:num/'
