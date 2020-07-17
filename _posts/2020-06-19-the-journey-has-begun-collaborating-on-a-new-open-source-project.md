@@ -4,7 +4,7 @@ date: 2020-06-19 21:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/architecture-diagram.jpg
-categories: open-source-projects
+category: open-source
 ---
 
 The journey has begun! Myself, [Davide Bellone](https://www.code4it.dev/) and [Wouter van Vegchel](https://twitter.com/wvegchel) are embarking on a new open source project together to build a fun platform for helping dev bloggers share their content and help get it out to a wider audience.

@@ -336,7 +336,7 @@ permalink: /about/
 
 Because Jekyll was built by [Tom Preston-Werner](https://tom.preston-werner.com), the co-founder of [GitHub](https://github.com), Jekyll works exceptionally well with [GitHub Pages](https://pages.github.com).
 
-GitHub Pages is a static website hosting service that enables you to host a *(static)* website directly from a public GitHub repository. At time of writing, it is available on GitHub Free, GitHub Free for organizations as well as the professional and enterprise plans.
+GitHub Pages is a static website hosting service that enables you to host a *(static)* website directly from a public GitHub repository. At the time of writing, it is available on GitHub Free, GitHub Free for organizations as well as the professional and enterprise plans.
 
 One of the great benefits of using Jekyll with GitHub Pages is that you can write a new blog post, commit it to the GitHub repository that's being used to host your blog and **your website will be automatically built to publish the new article**. This is why Jekyll and GitHub Pages work so well together!
 

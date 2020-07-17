@@ -4,7 +4,7 @@ date: 2020-06-13 19:55:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/powershell-logo.png
-categories: jekyll powershell
+category: jekyll
 ---
 
 <img src="{{ site.baseurl }}/assets/img/2020/06/powershell-logo.png" alt="Powershell logo" class="img-fluid float-right ml-2 mb-2" />
