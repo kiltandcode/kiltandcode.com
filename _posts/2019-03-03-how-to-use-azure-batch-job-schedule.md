@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 permalink: /how-to-use-azure-batch-job-schedule/
 image: /assets/img/2019/03/8_configjobconfigtask.png
-category: azure-batch
+category: azure
 ---
 
 *This is a follow-up to the article ‘[Using Azure Batch to Orchestrate and Execute Code at Large-Scale](http://kiltandcode.com/using-azure-batch-to-orchestrate-and-execute-code-at-large-scale/)’. If you are unfamiliar with Azure Batch, you may find it useful to read this first.*

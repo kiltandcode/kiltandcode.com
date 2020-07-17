@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 permalink: /using-azure-batch-to-orchestrate-and-execute-code-at-large-scale/
 image: /assets/img/2019/03/6_batchnodes.png
-category: azure-batch
+category: azure
 ---
 
 Azure Batch is not a new technology by Microsoft, but for some reason it doesn’t seem to be receiving as much attention as similar Microsoft cloud platforms: Azure Functions and [Logic Apps](https://kiltandcode.com/azure-logic-apps-how-to-use-microsofts-serverless-codeless-integration-platform/).

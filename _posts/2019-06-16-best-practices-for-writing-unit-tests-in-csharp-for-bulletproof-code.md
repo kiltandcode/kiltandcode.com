@@ -4,7 +4,7 @@ date: 2019-06-16 11:13:01 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/06/test-explorer.png
-categories: csharp unit-testing
+category: csharp
 ---
 
 In my experience, developers have a love hate relationship with unit testing. I don’t know if some find it tedious, or some just don’t see the value in writing code to verify if other code works.
@@ -27,7 +27,7 @@ In my opinion, one of the benefits of writing unit tests in C# is the peace of m
 
 Testing frameworks enable us to decorate our unit tests with attributes such as *(or similar to)* ***[TestClass]*** or ***[TestMethod]***. These attributes inform the Text Explorer in Visual Studio to recognize the class or method as a unit test and will execute the code to return a pass or a fail.
 
-The most popular .NET testing frameworks are *(at time of writing and in no particular order)*:
+The most popular .NET testing frameworks are *(at the time of writing and in no particular order)*:
 
 * **MSTest**
 * **xUnit.NET**

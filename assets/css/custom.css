@@ -7,6 +7,17 @@ https://cpratt.co/twitter-bootstrap-callout-css-styles/
 */
 @import url('bs-callout.css');
 
+/* Google Fonts (Lora) */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+html, body {
+  font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #333 !important;
 }
