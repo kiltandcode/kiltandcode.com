@@ -247,5 +247,3 @@ using (var browser = await Puppeteer.ConnectAsync(connectOptions))
 ## Contribute to Puppeteer Sharp
 
 If you would like to use this excellent API, be sure to visit [puppeteersharp.com](https://www.puppeteersharp.com/). However, If you would like to contribute to this project, you can find the GitHub profile at [github.com/kblok/puppeteer-sharp](https://github.com/kblok/puppeteer-sharp).
-
-Lastly, if you do use this useful port of the Google Chrome NodeJS API, please show your appreciation by donating to their [Open Source Collective](https://opencollective.com/puppeteer-sharp).
