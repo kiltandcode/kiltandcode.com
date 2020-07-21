@@ -11,7 +11,7 @@ permalink:           /:year/:month/:day/:title/
 plugins:             [jekyll-sitemap, jekyll-feed, jekyll-seo-tag, jekyll-paginate]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'Kilt &amp; Code'
+title:		           'Kilt & Code'
 description:	       'A blog by Steven McLintock'
 author:              'Steven McLintock'
 

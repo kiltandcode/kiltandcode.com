@@ -18,11 +18,16 @@
     {% feed_meta %}
 
     <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Use Jekyll SEO plugin (inc. title tag) -->
-    {% seo %}
+    {% seo title=false %}
+
+    <!-- Title tag -->
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   </head>
 
   <body>
@@ -82,8 +87,6 @@
                       <li class="list-inline-item">
                           <a href="{{ site.baseurl }}/feed.xml" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a>
                       </li>
-
-
                   </ul>
               </div>
             </div>
