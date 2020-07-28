@@ -12,7 +12,7 @@ plugins:             [jekyll-sitemap, jekyll-feed, jekyll-seo-tag, jekyll-pagina
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Kilt and Code'
-description:	       'Ye Olde Software Development Blog by Steven McLintock'
+description:	       'Ye Olde Software Development Blog'
 author:              'Steven McLintock'
 
 # Pagination
