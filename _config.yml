@@ -8,13 +8,9 @@ url:                'https://www.kiltandcode.com'
 markdown:            kramdown
 highlighter:         rouge
 permalink:           /:year/:month/:day/:title/
-plugins:             [jekyll-sitemap, jekyll-feed, jekyll-seo-tag, jekyll-paginate]
+plugins:             [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+# Customize atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Kilt and Code'
-description:	       'Ye Olde Software Development Blog'
+description:	       'A Wee Software Development Blog'
 author:              'Steven McLintock'
-
-# Pagination
-paginate:             5
-paginate_path:        '/page:num/'
