@@ -2,40 +2,49 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-    <h3>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h3>
-    
-    <div class="text-secondary small mb-3">
-        {%
-            include written-on.html
-            date=post.date
-        %}
+<div class="row">
+  <div class="col-md-10 offset-md-1">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 style="font-size: 2.3rem;" class="mb-4">
+          Welcome to Kilt and Code! A <em>"<a href="https://www.urbandictionary.com/define.php?term=wee">wee</a>"</em> 
+          software development blog.
+        </h1>
+
+        <p>Kilt and Code is written by <a href="{{ site.baseurl }}/about">Steven McLintock</a>, a Scottish software developer. 
+          I enjoy writing about the things I learn, primarily on the languages and frameworks I use on a daily basis. You can also read about 
+          <a href="{{ site.baseurl }}/2020/02/16/my-journey-to-becoming-a-full-stack-developer/">my journey to becoming a full stack developer</a>, 
+          <a href="{{ site.baseurl }}/2019/06/30/coming-to-canada-immigrating-to-toronto-as-a-dotnet-developer/">immigrating to Toronto as a .NET developer</a> 
+          and more in the <a href="{{ site.baseurl }}/articles">archives</a>.
+        </p>
+
+        <h2 class="mt-4">
+          What's New?
+        </h2>
+        
+        {% for post in site.posts limit:5 %}
+          <div class="mb-4 mt-4">
+              <h5>
+                  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              </h5>
+              
+              <div class="text-secondary small mb-4">
+                  {%
+                      include written-on.html
+                      date=post.date
+                  %}
+              </div>
+
+              <hr />
+          </div>
+        {% endfor %}
+  
+        <a class="btn btn-outline-secondary mb-1" href="{{ site.baseurl }}/articles">View all articles</a>
+      </div>
+
+      <div class="col-md-4">
+        <img src="{{ site.baseurl }}/assets/img/cartoon-scottish-developer.gif" alt="Cartoon Scottish Developer" class="img-fluid mx-auto d-block" />
+      </div>
     </div>
-
-    <p>
-        {{ post.content | strip_html | truncate: 200 }} <a href="{{ site.baseurl }}{{ post.url }}">read more</a>
-    </p>
-    
-    <hr class="mb-4 mt-4" />
-{% endfor %}
-
-<!-- Pagination links -->
-<ul class="list-inline text-center">
-    <li class="list-inline-item">
-        {% if paginator.next_page %}
-        <a class="btn btn btn-outline-secondary" href="{{ site.baseurl }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>
-        {% else %}
-        <a class="disabled btn btn btn-outline-secondary">{{ site.data.settings.pagination.previous_page }}</a>
-        {% endif %}
-    </li>
-
-    <li class="list-inline-item">
-        {% if paginator.previous_page %}
-        <a class="btn btn btn-outline-secondary" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
-        {% else %}
-        <a class="disabled btn btn btn-outline-secondary">{{ site.data.settings.pagination.next_page }}</a>
-        {% endif %}
-    </li>
-</ul>
+  </div>
+</div>

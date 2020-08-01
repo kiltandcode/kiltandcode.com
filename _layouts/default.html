@@ -27,7 +27,13 @@
     {% seo title=false %}
 
     <!-- Title tag -->
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>
+      {% if page.title %}
+        {{ page.title }} - {{ site.title }}
+      {% else %}
+        {{ site.title }} - {{ site.description }}
+      {% endif %}
+    </title>
   </head>
 
   <body>
@@ -39,7 +45,7 @@
         </button>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             {% for item in site.data.settings.menu %}
               {% assign page_url = page.url | remove: '/' %}
               {% assign item_url = item.url | remove: '/' %}
@@ -55,40 +61,7 @@
       </header>
 
       <div class="container mt-3 mb-3 pl-0 pr-0">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="content">
-              {{ content }}
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card bg-light shadow">
-              <div class="card-body">
-                  <img src="{{ site.baseurl }}/assets/img/2019/04/me-waterfall.jpg" alt="Steven McLintock" width="100" height="100" class="rounded-circle img-fluid mx-auto d-block mb-3" />
-                  <p class="card-text text-center">
-                      <small>
-                        Kilt &amp; Code is a blog written by Steven McLintock, a full-stack developer originally from Scotland. Steven primarily uses Microsoft's .NET framework in addition to Angular and has been working as a developer since 2006.
-                      </small>
-                    </p>
-
-                    <ul class="list-inline text-center social">
-                      <li class="list-inline-item">
-                        <a href="mailto:steven@kiltandcode.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="http://www.linkedin.com/in/kiltandcode/" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="https://www.github.com/kiltandcode" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="{{ site.baseurl }}/feed.xml" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a>
-                      </li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        {{ content }}
       </div>
       
       <footer class="page-footer small text-center text-secondary p-4">
