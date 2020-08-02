@@ -22,7 +22,7 @@ layout: default
           What's New?
         </h2>
         
-        {% for post in site.posts limit:5 %}
+        {% for post in site.posts limit:3 %}
           <div class="mb-4 mt-4">
               <h5>
                   <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -38,7 +38,7 @@ layout: default
               <hr />
           </div>
         {% endfor %}
-        
+
         <a class="btn btn-outline-secondary mb-4 mb-md-0" href="{{ site.baseurl }}/articles">View all articles</a>
       </div>
 
