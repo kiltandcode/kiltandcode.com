@@ -29,9 +29,9 @@
     <!-- Title tag -->
     <title>
       {% if page.title %}
-        {{ page.title }} - {{ site.title }}
+        {{ page.title }} - {% include site-title.html %}
       {% else %}
-        {{ site.title }} - {{ site.description }}
+        {% include site-title.html %} - {{ site.description }}
       {% endif %}
     </title>
   </head>
@@ -39,7 +39,8 @@
   <body>
     <div class="container mt-1 mb-3">
       <header class="navbar navbar-expand-lg navbar-light mb-4 pl-0 pr-0">
-        <a href="{{ site.baseurl }}/" class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/logo-with-text.svg" alt="{{ site.title }}" width="182" height="110" /></a>
+        <a href="{{ site.baseurl }}/" class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/logo.png" alt="{% include site-title.html %}" width="83" height="111" /></a>
+        <a href="{{ site.baseurl }}/" class="navbar-brand"><strong style="font-size: 2rem;">{% include site-title.html %}</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -65,7 +66,7 @@
       </div>
       
       <footer class="page-footer small text-center text-secondary p-4">
-        {{ site.title }} | {{ site.description }}
+        {% include site-title.html %} | {{ site.description }}
       </footer>
     </div>
 
