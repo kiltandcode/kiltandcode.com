@@ -23,6 +23,8 @@ The solution uses the [shareReplay](https://www.learnrxjs.io/learn-rxjs/operator
 *'replay'* the observable so we don't need to execute the same HTTP call over and over again. If we're able to locally store the 
 observable, retrieve it and replay it, we have enough to build a basic caching service for Angular!
 
+We'll first build a basic caching service for Angular and then expand on it to implement time-based caching.
+
 ## Basic Caching Service for Angular
 
 Using the solution in the article, I built a basic caching service for Angular that will store an observable in cache on the first HTTP call 
