@@ -7,6 +7,14 @@ image: /assets/img/2020/06/angular-logo.png
 category: angular
 ---
 
+{%
+    include image-lead.html
+    year='2020'
+    month='06'
+    file='angular-logo.png'
+    alt='Angular logo'
+%}
+
 Have you ever looked for a piece of HTML in the code of an Angular app and found something similar to ***&lt;ng-container *ngTemplateOutlet="navBarTemplate"&gt;&lt;/ng-container&gt;*** instead?
 
 It turns out the [template syntax](https://angular.io/guide/template-syntax) in Angular can be used to store a chunk of HTML within a *"template"* that can be easily called upon elsewhere in the codebase. This is particularly useful when you want to keep the code in your components clean and tidy.
