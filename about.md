@@ -13,4 +13,4 @@ I [immigrated to Canada](https://kiltandcode.com/2019/06/30/coming-to-canada-imm
     alt='Steven McLintock'
 %}
 
-I hope you enjoy my ad-free, minimalist area of the internet. Please reach out if you have any questions by emailing me at [steven@kiltandcode.com](mailto:steven@kiltandcode.com).
+I hope you enjoy my ad-free, minimalist area of the internet. Please reach out if you have any questions by emailing me at [stevenmclintock@fastmail.com](mailto:stevenmclintock@fastmail.com).

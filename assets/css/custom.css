@@ -26,6 +26,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #333 !important;
 }
 
+hr {
+  background-color: #d6d9de;
+}
+
 /* Override the default Rouge theme */
 .highlighter-rouge {
   margin-bottom: 2rem;
@@ -37,15 +41,18 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   padding: 0.5rem;
 }
 
-/* Social icons */
-.social a {
+/* Custom social icons */
+.custom-social a {
   color: rgba(0,0,0,.5);
 }
 
-.social a:hover {
+.custom-social a:hover {
   color: rgba(0,0,0,.7);
 }
 
-hr {
-  background-color: #d6d9de;
+/* Custom logo */
+.custom-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
