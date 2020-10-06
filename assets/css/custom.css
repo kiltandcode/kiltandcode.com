@@ -7,8 +7,8 @@ https://cpratt.co/twitter-bootstrap-callout-css-styles/
 */
 @import url('bs-callout.css');
 
-/* Google Fonts (Lora) */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+/* Google Fonts (Lora, UnifrakturCook) */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500;1,700&family=UnifrakturCook:wght@700&display=swap');
 
 html, body {
   font-family: 'Lora', serif;
@@ -52,7 +52,8 @@ hr {
 
 /* Custom logo */
 .custom-logo {
-  font-size: 1.7rem;
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 1.9rem;
   font-weight: bold;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
 }
