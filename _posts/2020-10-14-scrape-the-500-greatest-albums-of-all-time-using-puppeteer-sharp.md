@@ -1,6 +1,6 @@
 ---
 title: "Scrape the 500 Greatest Albums of All Time using Puppeteer Sharp"
-date: 2020-10-14 21:00:00 +00:00
+date: 2020-10-14 19:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/04/puppeteer-logo.png
@@ -9,29 +9,29 @@ category: puppeteer
 
 {%
     include image-lead.html
-    year='2020'
-    month='06'
+    year='2019'
+    month='04'
     file='puppeteer-logo.png'
-    alt='Puppeteer logo'
+    alt='Puppeteer Logo'
 %}
 
-As a keen Spotify user that is always in search of new albums and artists to listen to, 
-I was particularly interested when I heard that [Rolling Stone](https://www.rollingstone.com/) magazine 
-announced a new, updated list of their 
+As a keen [Spotify](https://www.spotify.com/) user that is always in search of new albums and artists to 
+listen to, I was particularly interested when I heard that [Rolling Stone](https://www.rollingstone.com/) 
+magazine announced a new, updated list of their 
 [500 Greatest Albums of All Time](https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/) 
 for 2020.
 
-I thought it would be a good idea, whilst working at home during the pandemic, to listen to all 500 albums in 
-descending order. One way of accomplishing this is to scroll through the list of albums, listening to them one 
-by one, but the programmer in me thought to do one better! Why not scrape the list so I can create a document 
-in [Google Sheets](https://www.google.com/sheets/about/), marking each album as I listen to it and writing a 
-comment on if I liked it or not?
+I thought it would be a good idea, whilst at home during the pandemic, to listen to all 500 albums in 
+descending order. One way to accomplish this is to scroll through the list of albums, listening to them one 
+by one, but the programmer in me thought to go one better! Why not scrape the HTML so I can create a private 
+document in [Google Sheets](https://www.google.com/sheets/about/), marking each of the albums as I listen to 
+them and writing a comment on each one?
 
 ## Scrape using Puppeteer Sharp
 
 I decided to scrape the HTML using [Puppeteer Sharp](), the .NET port of the popular 
 [Puppeteer](https://developers.google.com/web/tools/puppeteer) Node library by Google, mostly because I'm a 
-.NET developer and also because I'm already familar with it. It's a really useful library that will enable a 
+.NET developer and also because I'm already familiar with it. It's a really useful library that will enable a 
 developer to *"puppeteer"* a web browser and automate a series of tasks.
 
 Once the [Puppeteer Sharp](https://www.nuget.org/packages/puppeteersharp/) package is installed in a new 
@@ -72,7 +72,7 @@ Dictionary<string, string> pages = new Dictionary<string, string>()
 
 Now that we have the list of pages in a dictionary object, we can iterate through each page, scraping the albums one by one 
 *(50 per page)* using the elements in the HTML to indicate where each album and it's metadata are placed. We'll assign the 
-album metadata to variables and output these to the console window for the purpose of this example.
+album metadata to variables and output these to the console window for the purpose of this example:
 
 ```csharp
 // Iterate through the dictionary of pages
@@ -115,7 +115,7 @@ foreach (KeyValuePair<string, string> entry in pages)
 ```
 
 Please be aware that the HTML elements *(class names, etc.)* used in this code snippet may change over time, 
-and these will need to be updated accordingly if a class or element is found to no longer exist.
+and these will need to be updated accordingly if a class name or element no longer exists.
 
 Once we're done, let's close the browser and write to the console that the scrape is complete:
 
@@ -126,8 +126,16 @@ await browser.CloseAsync();
 Console.WriteLine("Scrape complete. Press any key to exit...");
 ```
 
+{%
+    include image.html
+    year='2020'
+    month='10'
+    file='500-greatest-albums-in-terminal.png'
+    alt='500 greatest albums in a terminal window'
+%}
+
 While the official list of the 
 [500 Greatest Albums of All Time](https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/) 
 should be the first place you visit for this information, I hope this article is a useful resource for how to use 
 [Puppeteer Sharp](https://www.puppeteersharp.com/) to scrape the list of albums with the aim of listening through all of 
-them, one by one in decending order.
+them, one by one in descending order.
