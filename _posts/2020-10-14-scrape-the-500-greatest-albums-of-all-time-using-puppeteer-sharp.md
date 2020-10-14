@@ -128,6 +128,6 @@ Console.WriteLine("Scrape complete. Press any key to exit...");
 
 While the official list of the 
 [500 Greatest Albums of All Time](https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/) 
-should be the first place you visit to view this information, I hope this article is a useful resource for how to use 
-[Puppeteer Sharp](https://www.puppeteersharp.com/) to scrape the list of albums with the aim of listening to all of 
+should be the first place you visit for this information, I hope this article is a useful resource for how to use 
+[Puppeteer Sharp](https://www.puppeteersharp.com/) to scrape the list of albums with the aim of listening through all of 
 them, one by one in decending order.
