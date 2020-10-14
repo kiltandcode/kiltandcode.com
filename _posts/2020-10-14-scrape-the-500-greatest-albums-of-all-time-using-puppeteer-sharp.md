@@ -114,8 +114,8 @@ foreach (KeyValuePair<string, string> entry in pages)
 }
 ```
 
-Please be aware that the HTML elements *(class names, etc.)* used in this example may change over time, 
-and these will need to be updated accordingly if a class or element no longer exists.
+Please be aware that the HTML elements *(class names, etc.)* used in this code snippet may change over time, 
+and these will need to be updated accordingly if a class or element is found to no longer exist.
 
 Once we're done, let's close the browser and write to the console that the scrape is complete:
 
