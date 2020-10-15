@@ -74,14 +74,18 @@ Now that we have the list of pages in a dictionary object, we can iterate throug
 *(50 per page)* using the elements in the HTML to indicate where each album and it's metadata are placed. We'll assign the 
 album metadata to variables and output these to the console window for the purpose of this example:
 
+***Please note: In this example we're using an ethical user-agent header. This is to let the website know this is web scraping script and to provide contact information. To find out more on ethical web scraping, please visit [The Ultimate Guide To Ethical
+Web Scraping](https://finddatalab.com/ethicalscraping).***
+
 ```csharp
 // Iterate through the dictionary of pages
 foreach (KeyValuePair<string, string> entry in pages)
 {
     Console.WriteLine($"Opening page for {entry.Key}");
 
-    // Create a new page using PuppeteerSharp
+    // Create a new page using PuppeteerSharp (using ethical user agent header)
     Page page = await browser.NewPageAsync();
+    await page.SetUserAgentAsync("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36; Kilt and Code/www.kiltandcode.com");
     await page.GoToAsync(entry.Value);
 
     // Wait for the element containing the albums to finish loading and assign it to an ElementHandle
