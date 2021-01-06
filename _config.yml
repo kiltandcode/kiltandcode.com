@@ -2,7 +2,7 @@
 
 # Domain name
 baseurl:            ''
-url:                'https://kiltandcode.com'
+url:                'https://www.kiltandcode.com'
 
 # Build settings
 markdown:            kramdown
