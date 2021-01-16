@@ -3,48 +3,44 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col-md-10 offset-md-1">
-    <div class="row">
-      <div class="col-md-8">
-        <h1 style="font-size: 2.3rem;" class="mb-4">
-          Welcome to {% include site-title.html %}! A <em>"<a href="https://www.urbandictionary.com/define.php?term=wee">wee</a>"</em> 
-          software development blog.
-        </h1>
+  <div class="col-md-8">
+    <h1 style="font-size: 2.3rem;" class="mb-4">
+      Welcome to {% include site-title.html %}! A <em>"<a href="https://www.urbandictionary.com/define.php?term=wee">wee</a>"</em> 
+      software development blog.
+    </h1>
 
-        <p>{% include site-title.html %} is written by <a href="{{ site.baseurl }}/about">Steven McLintock</a>, a Scottish software developer. 
-          I enjoy writing about the things I learn, primarily on the languages and frameworks I use on a daily basis. You can also read about 
-          <a href="{{ site.baseurl }}/2020/02/16/my-journey-to-becoming-a-full-stack-developer/">my journey to becoming a full stack developer</a>, 
-          <a href="{{ site.baseurl }}/2019/06/30/coming-to-canada-immigrating-to-toronto-as-a-dotnet-developer/">immigrating to Toronto as a .NET developer</a> 
-          and more in the <a href="{{ site.baseurl }}/articles">archives</a>.
-        </p>
+    <p>{% include site-title.html %} is written by <a href="{{ site.baseurl }}/about">Steven McLintock</a>, a Scottish software developer. 
+      I enjoy writing about the things I learn, primarily on the languages and frameworks I use on a daily basis. You can also read about 
+      <a href="{{ site.baseurl }}/2020/02/16/my-journey-to-becoming-a-full-stack-developer/">my journey to becoming a full stack developer</a>, 
+      <a href="{{ site.baseurl }}/2019/06/30/coming-to-canada-immigrating-to-toronto-as-a-dotnet-developer/">immigrating to Toronto as a .NET developer</a> 
+      and more in the <a href="{{ site.baseurl }}/articles">archives</a>.
+    </p>
 
-        <h2 class="mt-4">
-          What's New?
-        </h2>
-        
-        {% for post in site.posts limit:3 %}
-          <div class="mb-4 mt-4">
-              <h5>
-                  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              </h5>
-              
-              <div class="text-secondary small mb-4">
-                  {%
-                      include written-on.html
-                      date=post.date
-                  %}
-              </div>
-
-              <hr />
+    <h2 class="mt-4">
+      What's New?
+    </h2>
+    
+    {% for post in site.posts limit:3 %}
+      <div class="mb-4 mt-4">
+          <h5>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </h5>
+          
+          <div class="text-secondary small mb-4">
+              {%
+                  include written-on.html
+                  date=post.date
+              %}
           </div>
-        {% endfor %}
 
-        <a class="btn btn-outline-secondary mb-4 mb-md-0" href="{{ site.baseurl }}/articles">View all articles</a>
+          <hr />
       </div>
+    {% endfor %}
 
-      <div class="col-md-4">
-        <img src="{{ site.baseurl }}/assets/img/cartoon-scottish-developer.png" alt="Cartoon Scottish Developer" class="img-fluid mx-auto d-block" />
-      </div>
-    </div>
+    <a class="btn btn-outline-secondary mb-4 mb-md-0" href="{{ site.baseurl }}/articles">View all articles</a>
+  </div>
+
+  <div class="col-md-4">
+    <img src="{{ site.baseurl }}/assets/img/cartoon-scottish-developer.png" alt="Cartoon Scottish Developer" class="img-fluid mx-auto d-block" />
   </div>
 </div>
