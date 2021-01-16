@@ -41,12 +41,12 @@ hr {
   padding: 0.5rem;
 }
 
-/* Custom social icons */
-.custom-social a {
+/* Page footer links (for icons) */
+.page-footer a {
   color: rgba(0,0,0,.5);
 }
 
-.custom-social a:hover {
+.page-footer a:hover {
   color: rgba(0,0,0,.7);
 }
 
