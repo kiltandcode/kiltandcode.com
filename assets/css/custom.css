@@ -42,7 +42,12 @@ hr {
   color: rgba(0,0,0,.7);
 }
 
-/* Retro logo */
-.retro-logo {
+/* Retro font */
+.retro-font {
   font-family: 'Press Start 2P', cursive;
+}
+
+/* Kilt red */
+.kilt-red {
+  color: #d12229;
 }
