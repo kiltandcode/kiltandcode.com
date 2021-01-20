@@ -7,16 +7,8 @@ https://cpratt.co/twitter-bootstrap-callout-css-styles/
 */
 @import url('bs-callout.css');
 
-/* Google Fonts (Lora, UnifrakturCook) */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500;1,700&family=UnifrakturCook:wght@700&display=swap');
-
-html, body {
-  font-family: 'Lora', serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #333 !important;
@@ -41,19 +33,21 @@ hr {
   padding: 0.5rem;
 }
 
-/* Custom social icons */
-.custom-social a {
+/* Page footer links (for icons) */
+.page-footer a {
   color: rgba(0,0,0,.5);
 }
 
-.custom-social a:hover {
+.page-footer a:hover {
   color: rgba(0,0,0,.7);
 }
 
-/* Custom logo */
-.custom-logo {
-  font-family: 'UnifrakturCook', cursive;
-  font-size: 1.9rem;
-  font-weight: bold;
-  line-height: 1.9rem;
+/* Retro font */
+.retro-font {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Kilt red */
+.kilt-red {
+  color: #d12229;
 }

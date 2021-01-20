@@ -29,44 +29,73 @@
     <!-- Title tag -->
     <title>
       {% if page.title %}
-        {{ page.title }} - {% include site-title.html %}
+        {{ page.title }} - {{ site.title }}
       {% else %}
-        {% include site-title.html %} - {{ site.description }}
+        {{ site.title }} - {{ site.description }}
       {% endif %}
     </title>
   </head>
 
   <body>
     <div class="container mt-1 mb-3">
-      <header class="navbar navbar-expand-lg navbar-light mb-4 pl-0 pr-0">
-        <a href="{{ site.baseurl }}/" class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/logo.png" alt="{% include site-title.html %}" width="83" height="111" /></a>
-        <a href="{{ site.baseurl }}/" class="navbar-brand mr-auto custom-logo">Kilt &amp;<br />Code</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            {% for item in site.data.settings.menu %}
-              {% assign page_url = page.url | remove: '/' %}
-              {% assign item_url = item.url | remove: '/' %}
-      
-              {% if page_url == item_url %}
-                <li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.name }}</a></li>
-              {% else %}
-                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.name }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <header class="navbar navbar-expand-lg navbar-light mb-4 pl-0 pr-0">
+            <a href="{{ site.baseurl }}/" class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/cartoon-scottish-face.png" alt="{{ site.title }}" width="83" height="89" /></a>
+            <a href="{{ site.baseurl }}/" class="navbar-brand mr-auto retro-font">Kilt <span class="kilt-red">&amp;</span><br />Code</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                {% for item in site.data.settings.menu %}
+                  {% assign page_url = page.url | remove: '/' %}
+                  {% assign item_url = item.url | remove: '/' %}
+          
+                  {% if page_url == item_url %}
+                    <li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.name }}</a></li>
+                  {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.name }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          </header>
         </div>
-      </header>
-
-      <div class="container mt-3 mb-3 pl-0 pr-0">
-        {{ content }}
       </div>
       
-      <footer class="page-footer small text-center text-secondary p-4">
-        {% include site-title.html %} | {{ site.description }}
+      <div class="row mt-3 mb-3">
+        <div class="col-md-10 offset-md-1">
+          {{ content }}
+        </div>
+      </div>
+      
+      <footer class="page-footer small text-center text-secondary">
+        <div class="row">
+          <div class="col-md-12">
+            {{ site.title }} | {{ site.description }}
+          </div>
+        </div>
+        
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="mailto:stevenmclintock@fastmail.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/stevenmclintock/" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="https://www.github.com/kiltandcode" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="{{ site.baseurl }}/feed.xml" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
 
