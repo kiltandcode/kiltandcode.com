@@ -1,41 +1,81 @@
 ---
-title: "SQLite"
-date: 2020-10-21 19:00:00 +00:00
+title: "How to Install and Use SQLite on Windows"
+date: 2021-01-18 19:00:00 +00:00
 author: "Steven McLintock"
 layout: post
-image: /assets/img/2020/10/sqlite-windows-logo.png
-category: puppeteer
+image: /assets/img/2021/01/sqlite-on-windows.png
+category: sql
 ---
 
 {%
     include image-lead.html
-    year='2020'
-    month='10'
-    file='sqlite-windows-logo.png'
-    alt='SQLite on Windows'
+    year='2021'
+    month='01'
+    file='sqlite-on-windows.png'
+    alt='SQLite Download Page'
 %}
 
-## Installing SQLite on Windows 10
+Unlike modern versions of macOS, **SQLite isn't installed by default on Windows**. If you're using Windows 
+like I am, you need to do a few extra steps before you can start using it.
 
-download and copy files to C:\sqlite
-Download SQLite at https://www.sqlite.org/download.html
-(screenshot)
+Let's begin to install SQLite on Windows by first downloading the executables from the 
+[SQLite Download Page](https://www.sqlite.org/download.html).
 
-## Add PATH Environment Variable for SQLLite
+You'll want to find the section **Precompiled Binaries for Windows** and download one of the ZIPs. In this 
+guide I'll be using the bundle of command-line tools, simply because it's always useful to have the 
+additional utilities available if you ever need them.
 
-check what the benefit of this is (can we just use "sqllite" in the console?)
+The bundle includes the executables **sqlite3.exe** for managing SQLite databases, **sqldiff.exe** for 
+displaying the differences between SQLite databases and **sqlite3_analyzer.exe** that provides 
+information on the space utilization of SQLite databases.
 
-## Creating a New SQLite Database
+{%
+    include image.html
+    year='2021'
+    month='01'
+    file='precompiled-binaries-for-windows.png'
+    alt='Precompiled Binaries for Windows'
+%}
+
+Once you've downloaded the ZIP onto your PC, extract the files into the local directory **C:\sqlite**
+
+{%
+    include image.html
+    year='2021'
+    month='01'
+    file='sqlite-executables-on-pc.png'
+    alt='SQLite Executables on PC'
+%}
+
+## Add PATH Environment Variable
+
+{%
+    include image.html
+    year='2021'
+    month='01'
+    file='environment-variables.png'
+    alt='Environment Variables on Windows'
+%}
+
+{%
+    include image.html
+    year='2021'
+    month='01'
+    file='sqlite3-in-command-prompt.png'
+    alt='SQLite in Command Prompt'
+%}
+
+## Create a New SQLite Database
 
 ```terminal
-.open albums.sqlite
+.open albums.db
 ```
 
 creates DB in the C:\sqllite directory
 
 ## Executing SQLite Commands in the Command Prompt
 
-.databases to list all of the tables
+.databases to list all of the databases
 .tables to list all of the tables
 .read to execute a SQL file (saves typing in a lot of SQL into the terminal)
 ".mode column" to set the output to display left-aligned columns in the terminal
@@ -92,10 +132,14 @@ SELECT
     album.label AS [record label]
 FROM
     album
-INNER JOIN artist ON artist.id = album.artist
+JOIN artist ON artist.id = album.artist
 ORDER BY album.year DESC;
 ```
 
-## GUI Tools
---- unsure if this should be included (useful?)
---- https://sqlitebrowser.org/
+{%
+    include image.html
+    year='2021'
+    month='01'
+    file='sqlite3-example.png'
+    alt='Example of using SQLite on Windows'
+%}
