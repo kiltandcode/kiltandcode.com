@@ -8,7 +8,7 @@ https://cpratt.co/twitter-bootstrap-callout-css-styles/
 @import url('bs-callout.css');
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #333 !important;
@@ -42,12 +42,9 @@ hr {
   color: rgba(0,0,0,.7);
 }
 
-/* Retro font */
-.retro-font {
-  font-family: 'Press Start 2P', cursive;
-}
-
-/* Kilt red */
-.kilt-red {
-  color: #d12229;
+/* Logo text */
+.logo-text {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 1.9rem;
+  line-height: 1.9rem;
 }
