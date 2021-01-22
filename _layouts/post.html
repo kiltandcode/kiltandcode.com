@@ -7,7 +7,7 @@ layout: default
     {{ page.title }}
   </h1>
 
-  <div class="text-secondary small mb-4">
+  <div class="text-secondary small mb-5">
     {%
       include written-on.html
       date=page.date
@@ -15,9 +15,11 @@ layout: default
     %}
   </div>
   
-  {{ content }}
+  <div class="mt-5 mb-5">
+    {{ content }}
+  </div>
 
-  <div class="card bg-light shadow mt-4">
+  <div class="card bg-light shadow mt-5 mb-5">
     <div class="card-body">
       <div class="row">
         <div class="col-md-2">
@@ -49,7 +51,7 @@ layout: default
     </div>
   </div>
 
-  <div class="mt-4 mb-4 mb-md-0">
+  <div class="mt-5 mb-5 mb-md-0">
     <h2>Comments</h2>
     
     <script src="https://utteranc.es/client.js"

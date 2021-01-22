@@ -1,6 +1,6 @@
 ---
 title: "How to Install and Use SQLite on Windows"
-date: 2021-01-18 19:00:00 +00:00
+date: 2021-01-21 21:45:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/01/sqlite-on-windows.png
@@ -15,15 +15,15 @@ category: sql
     alt='SQLite Download Page'
 %}
 
-Unlike modern versions of macOS, **SQLite isn't installed by default on Windows**. If you're using Windows 
-like I am, you need to do a few extra steps before you can start using it.
+Unlike modern versions of macOS, SQLite isn't installed by default on Windows. If you're using Windows 
+like I am, you need to complete a few extra steps before you can start using it.
 
 Let's begin to install SQLite on Windows by first downloading the executables from the 
 [SQLite Download Page](https://www.sqlite.org/download.html).
 
-You'll want to find the section **Precompiled Binaries for Windows** and download one of the ZIPs. In this 
+You'll want to find the section **Precompiled Binaries for Windows** and download one of the zip files. In this 
 guide I'll be using the bundle of command-line tools, simply because it's always useful to have the 
-additional utilities available if you ever need them.
+additional utilities on hand.
 
 The bundle includes the executables **sqlite3.exe** for managing SQLite databases, **sqldiff.exe** for 
 displaying the differences between SQLite databases and **sqlite3_analyzer.exe** that provides 
@@ -37,7 +37,7 @@ information on the space utilization of SQLite databases.
     alt='Precompiled Binaries for Windows'
 %}
 
-Once you've downloaded the ZIP onto your PC, extract the files into the local directory **C:\sqlite**
+Once you've downloaded the zip file, extract the executables into the local folder **C:\sqlite**
 
 {%
     include image.html
@@ -47,7 +47,11 @@ Once you've downloaded the ZIP onto your PC, extract the files into the local di
     alt='SQLite Executables on PC'
 %}
 
-## Add PATH Environment Variable
+## Edit PATH Environment Variable
+
+You've now *downloaded* SQLite to your local Windows environment, but you haven't *installed* it yet. We could simply use the command prompt to navigate to the folder containing the executables each time we run SQLite, but who wants to do that?! Let's actually *install* SQLite by editing the PATH environment variable on Windows.
+
+Let's begin by using the Windows Start Menu to search for *"environment variables"* to open the **Environment Variables** window located in **Settings**. You'll want to **locate the *'Path'* variable** and click **Edit**:
 
 {%
     include image.html
@@ -57,6 +61,18 @@ Once you've downloaded the ZIP onto your PC, extract the files into the local di
     alt='Environment Variables on Windows'
 %}
 
+Within *'Edit environment variable'* for the *'Path'* variable, **add a new entry with a value of *"C:\sqlite"***. This is telling Windows that if you type the name of an executable into the command prompt, it will include this path when looking for it's location.
+
+{%
+    include image.html
+    year='2021'
+    month='01'
+    file='edit-environment-variables.png'
+    alt='Add New Environment Variable'
+%}
+
+Once you've added the new variable, open a new command prompt *(or Windows Terminal)* and type the name of one of the executables you downloaded. In this screenshot you can see that running the command **sqlite3** is able to run the executable **sqlite3.exe** within the folder **C:\sqlite**!
+
 {%
     include image.html
     year='2021'
@@ -65,31 +81,43 @@ Once you've downloaded the ZIP onto your PC, extract the files into the local di
     alt='SQLite in Command Prompt'
 %}
 
-## Create a New SQLite Database
+You've now got SQLite installed on Windows and are ready to manage SQLite databases!
 
+## Useful SQLite Commands
+
+If you're looking to create a new database or list the databases and tables already on your local Windows environment, here are a few commands that you may find useful.
+
+### Create a new *(or opening an existing)* database
 ```terminal
-.open albums.db
+.open <FILENAME>
 ```
 
-creates DB in the C:\sqllite directory
+### List all databases
+```terminal
+.databases
+```
 
-## Executing SQLite Commands in the Command Prompt
+### List all tables in the current database
+```terminal
+.tables
+```
 
-.databases to list all of the databases
-.tables to list all of the tables
-.read to execute a SQL file (saves typing in a lot of SQL into the terminal)
-".mode column" to set the output to display left-aligned columns in the terminal
-".headers on" to turn the headers on or off in the terminal
+### Read SQL in a file
+```terminal
+.read <FILENAME>
+```
 
-link to the full list of SQLite commands in official documentation
+### View the result set in a table structure
+```terminal
+.mode column
+.headers on
+```
 
-## Executing SQL Commands Using SQLite
+## Execute SQL Statements in SQLite
 
-show how to use ".read create-table.sql" to create an entire table in the current database
+If you'd like to experiment with executing SQL statements in SQLite, why not create a new database and use the SQL statements in the following code snippets to return a result set in the command prompt?
 
-quick note (in italic): use transactions to boost performance (BEGIN/COMMIT)
-- show SQL script here to create tables and insert some data
-
+### Create tables and insert data
 ```sql
 BEGIN;
     CREATE TABLE IF NOT EXISTS artist (
@@ -120,10 +148,7 @@ BEGIN;
 COMMIT;
 ```
 
-run ".tables" to actually check if the table was created in the database
-
-then show how to do "SELECT * FROM table INNER JOIN ..... WHERE ...." to return the row
-
+### SELECT statement
 ```sql
 SELECT
     artist.title AS [artist], 
@@ -135,6 +160,8 @@ FROM
 JOIN artist ON artist.id = album.artist
 ORDER BY album.year DESC;
 ```
+
+You should now be able to manage SQLite databases on Windows!
 
 {%
     include image.html
