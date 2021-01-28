@@ -11,7 +11,6 @@ https://cpratt.co/twitter-bootstrap-callout-css-styles/
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=Permanent+Marker&display=swap');
 
 html, body {
-  font-size: 110%;
   font-family: 'Lora', serif;
 }
 
@@ -29,6 +28,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 hr {
   background-color: #d6d9de;
+}
+
+hr.short {
+  width: 40px;
 }
 
 /* Override the default Rouge theme */
