@@ -40,6 +40,8 @@ https://github.com/kiltandcode/mediatr-demo
     caption='ASP.NET Core Project without using MediatR'
 %}
 
+#### WithoutMediatRController.cs
+
 ```csharp
 [ApiController]
 [Route("[controller]")]
@@ -88,6 +90,8 @@ public class WithoutMediatRController : ControllerBase
 }
 ```
 
+#### Startup.cs *(extract)*
+
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
@@ -115,6 +119,8 @@ public void ConfigureServices(IServiceCollection services)
     alt='ASP.NET Core Project using MediatR'
     caption='ASP.NET Core Project using MediatR'
 %}
+
+#### WithMediatRController.cs
 
 ```csharp
 [ApiController]
@@ -155,6 +161,8 @@ public class WithMediatRController : Controller
 
 ### Requests
 
+#### GetArtistRequest.cs
+
 ```csharp
 public class GetArtistRequest : IRequest<Artist>
 {
@@ -162,12 +170,16 @@ public class GetArtistRequest : IRequest<Artist>
 }
 ```
 
+#### CreateAlbumRequest.cs
+
 ```csharp
 public class CreateAlbumRequest : IRequest<Guid>
 {
     public Album Album { get; set; }
 }
 ```
+
+#### SetRatingRequest.cs
 
 ```csharp
 public class SetRatingRequest : IRequest<Unit>
@@ -179,6 +191,8 @@ public class SetRatingRequest : IRequest<Unit>
 ```
 
 ### Request Handlers
+
+#### GetArtistHandler.cs
 
 ```csharp
 public class GetArtistHandler : IRequestHandler<GetArtistRequest, Artist>
@@ -205,6 +219,8 @@ public class GetArtistHandler : IRequestHandler<GetArtistRequest, Artist>
 }
 ```
 
+#### CreateAlbumHandler.cs
+
 ```csharp
 public class CreateAlbumHandler : IRequestHandler<CreateAlbumRequest, Guid>
 {
@@ -228,6 +244,8 @@ public class CreateAlbumHandler : IRequestHandler<CreateAlbumRequest, Guid>
     }
 }
 ```
+
+#### SetRatingHandler.cs
 
 ```csharp
 public class SetRatingHandler : IRequestHandler<SetRatingRequest, Unit>
@@ -273,6 +291,8 @@ public class SetRatingHandler : IRequestHandler<SetRatingRequest, Unit>
     caption='MediatR.Extensions.Microsoft.DependencyInjection on Nuget'
 %}
 
+#### Dependencies.cs
+
 ```csharp
     public static class Dependencies
     {
@@ -284,6 +304,8 @@ public class SetRatingHandler : IRequestHandler<SetRatingRequest, Unit>
         }
     }
 ```
+
+#### Startup.cs *(extract)*
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
