@@ -15,29 +15,42 @@ category: csharp
     alt='MediatR'
 %}
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+MediatR, by it's definition, is a **simple, unambitious mediator implementation 
+in .NET**. It was released in [2014](https://www.nuget.org/packages/MediatR/0.1.0) 
+by [Jimmy Bogard](https://github.com/jbogard) and is a useful package that we can 
+add to our .NET projects to implement the popular mediator pattern. It's available 
+on [NuGet](https://www.nuget.org/packages/MediatR/) and is also open-source 
+on [GitHub](https://github.com/jbogard/MediatR).
 
-[MediatR](https://github.com/jbogard/MediatR)
-[Jimmy Bogard](https://github.com/jbogard)
+This article isn't meant to be an in-depth explanation of the Mediator pattern, 
+for that I'd recommend the series of articles over at 
+[.NET Core Tutorials](https://dotnetcoretutorials.com/) beginning with 
+[The Mediator Pattern In .NET Core – Part 1 – What’s A Mediator?](https://dotnetcoretutorials.com/2019/04/30/the-mediator-pattern-in-net-core-part-1-whats-a-mediator/). Instead, I thought 
+I'd demonstrate the advantages of using the MediatR package within an API built using 
+ASP.NET Core and C#, more specifically using it's **request handlers to decouple your 
+code** and create a cleaner codebase.
 
-This article isn't meant to be an in-depth explanation of the Mediator pattern, for that 
-I'd recommend the series of articles over at [.NET Core Tutorials](https://dotnetcoretutorials.com/) 
-beginning with 
-[The Mediator Pattern In .NET Core – Part 1 – What’s A Mediator?](https://dotnetcoretutorials.com/2019/04/30/the-mediator-pattern-in-net-core-part-1-whats-a-mediator/). Instead, I thought I'd demonstrate 
-the advantages of using the MediatR package within an API built using ASP.NET Core and C#, more specifically 
-using it's request handlers to decouple your code and create a cleaner codebase.
+## ASP.NET Core Web Application Without MediatR
 
-https://github.com/kiltandcode/mediatr-demo
+In this guide I'll be using a demo ASP.NET Core web application 
+*(available on [GitHub](https://github.com/kiltandcode/mediatr-demo))* that 
+**was originally built without using MediatR**. This is to demonstrate 
+the benefits of implementing the mediator pattern and how introducing MediatR request 
+handlers can help decouple our code.
 
-## ASP.NET Core Project Without using MediatR
+The demo ASP.NET Core web application contains the following projects:
+
+* **MediatRApi** *(the API used for accepting GET, POST and PUT requests)*
+* **MediatRApi.Repositories** *(the repositories used for interacting with a database)*
+* **MediatRApi.Services** *(the services used throughout the application, such as the validation service)*
 
 {%
     include image.html
     year='2021'
     month='02'
     file='solution-explorer-without-mediatr.png'
-    alt='ASP.NET Core Project without using MediatR'
-    caption='ASP.NET Core Project without using MediatR'
+    alt='ASP.NET Core web application without MediatR'
+    caption='ASP.NET Core web application without MediatR'
 %}
 
 #### WithoutMediatRController.cs
@@ -109,7 +122,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-## ASP.NET Core Project using MediatR
+## ASP.NET Core Web Application With MediatR
 
 {%
     include image.html
@@ -327,4 +340,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-https://github.com/kiltandcode/mediatr-demo
+## GitHub Repository
+
+The code for this article is available at 
+[github.com/kiltandcode/mediatr-demo](https://github.com/kiltandcode/mediatr-demo)
