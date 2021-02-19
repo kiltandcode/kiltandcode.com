@@ -5,6 +5,12 @@ title: All Articles
 
 {% for post in site.posts %}
     <div class="mb-4 mt-4">
+        {%
+            include icon.html
+            icon=post.icon
+            alt=post.title
+        %}
+        
         <h4>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h4>
@@ -15,6 +21,8 @@ title: All Articles
                 date=post.date
             %}
         </div>
+
+        <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 240 | escape }}</p>
         
         <hr />
     </div>

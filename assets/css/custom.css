@@ -30,10 +30,6 @@ hr {
   background-color: #d6d9de;
 }
 
-hr.short {
-  width: 40px;
-}
-
 /* Override the default Rouge theme */
 .highlighter-rouge {
   margin-bottom: 2rem;

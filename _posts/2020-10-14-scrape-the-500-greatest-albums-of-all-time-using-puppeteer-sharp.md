@@ -4,6 +4,7 @@ date: 2020-10-14 19:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/04/puppeteer-logo.png
+icon: puppeteer.png
 category: puppeteer
 ---
 

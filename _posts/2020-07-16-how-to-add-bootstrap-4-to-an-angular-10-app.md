@@ -4,6 +4,7 @@ date: 2020-07-16 21:45:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/07/bootstrap-angular.png
+icon: angular.png
 category: angular
 ---
 

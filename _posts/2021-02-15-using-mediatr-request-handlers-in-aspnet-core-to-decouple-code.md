@@ -4,16 +4,9 @@ date: 2021-02-15 17:28:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/02/mediatr_gradient_128x128.png
+icon: mediatr.png
 category: csharp
 ---
-
-{%
-    include image-lead.html
-    year='2021'
-    month='02'
-    file='mediatr_gradient_128x128.png'
-    alt='MediatR'
-%}
 
 MediatR, by it's definition, is a **simple, unambitious mediator implementation 
 in .NET**. It was released in [2014](https://www.nuget.org/packages/MediatR/0.1.0) 

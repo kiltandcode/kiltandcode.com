@@ -4,6 +4,7 @@ date: 2021-01-21 21:45:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/01/sqlite-on-windows.png
+icon: sqlite.png
 category: sql
 ---
 

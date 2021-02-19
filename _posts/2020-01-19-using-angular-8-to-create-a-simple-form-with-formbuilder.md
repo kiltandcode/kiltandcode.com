@@ -4,6 +4,7 @@ date: 2020-01-19 11:53:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/01/2020-01-18 21_23_03-app.component.png
+icon: angular.png
 category: angular
 ---
 
