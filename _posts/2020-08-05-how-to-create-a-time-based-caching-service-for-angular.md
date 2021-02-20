@@ -4,16 +4,9 @@ date: 2020-08-05 21:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/angular-logo.png
+icon: angular.png
 category: angular
 ---
-
-{%
-    include image-lead.html
-    year='2020'
-    month='06'
-    file='angular-logo.png'
-    alt='Angular logo'
-%}
 
 If you're interested in building a caching service for Angular that will store the observable for a HTTP call in cache, 
 there is an excellent article by [Yury Katkov](https://medium.com/better-programming/how-to-create-a-caching-service-for-angular-bfad6cbe82b0) 

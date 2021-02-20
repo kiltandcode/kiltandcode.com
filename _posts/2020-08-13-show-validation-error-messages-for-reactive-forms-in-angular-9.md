@@ -4,16 +4,9 @@ date: 2020-08-13 21:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/angular-logo.png
+icon: angular.png
 category: angular
 ---
-
-{%
-    include image-lead.html
-    year='2020'
-    month='06'
-    file='angular-logo.png'
-    alt='Angular logo'
-%}
 
 In Angular there are two different types of forms for a user to input data: **reactive** and 
 **template-driven**. I personally prefer using reactive forms as they seem to follow the 

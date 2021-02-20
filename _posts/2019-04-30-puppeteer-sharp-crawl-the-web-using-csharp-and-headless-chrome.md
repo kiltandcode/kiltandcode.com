@@ -5,16 +5,9 @@ author: "Steven McLintock"
 layout: post
 permalink: /puppeteer-sharp-crawl-the-web-using-csharp-and-headless-chrome/
 image: /assets/img/2019/04/puppeteerdevtools.png
+icon: puppeteer.png
 category: puppeteer
 ---
-
-{%
-    include image-lead.html
-    year='2019'
-    month='04'
-    file='puppeteer-logo.png'
-    alt='Puppeteer Logo'
-%}
 
 Puppeteer Sharp is a port of the popular [Headless Chrome NodeJS API](https://pptr.dev/) built by Google. **Puppeteer Sharp was written in C#** and released in [2017](https://www.nuget.org/packages/PuppeteerSharp/0.0.1) by [Darío Kondratiuk](http://www.hardkoded.com) to offer the same functionality to .NET developers.
 

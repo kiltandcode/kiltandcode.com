@@ -1,14 +1,10 @@
 {% assign date = include.date %}
 {% assign author = include.author %}
 
-<time datetime="{{ date | date_to_xmlschema }}">
-  Written on
-  {% assign d = date | date: "%-d"  %}
-  {{ date | date: "%B" }}
-  {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
-  {{ date | date: "%Y" }}
-</time>
-
 {% if author.size > 0 %}
-  by {{ author }}
+  By {{ author }} on 
 {% endif %}
+
+<time datetime="{{ date | date_to_xmlschema }}">
+  {{ date | date: "%B" }} {{ date | date: "%-d" }}, {{ date | date: "%Y" }}
+</time>

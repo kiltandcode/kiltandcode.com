@@ -4,16 +4,9 @@ date: 2020-06-07 18:55:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/angular-logo.png
+icon: angular.png
 category: angular
 ---
-
-{%
-    include image-lead.html
-    year='2020'
-    month='06'
-    file='angular-logo.png'
-    alt='Angular logo'
-%}
 
 Roughly a year ago I was beginning a new job where one of the requirements was to use [Angular](https://angular.io/) on a daily basis. There was only one problem, I'd never used Angular before. I'd been honest in the interview, saying I'd had a brief introduction to the [React](https://reactjs.org/) framework, but not Angular. Thankfully they were understanding and I was expected to learn on the job.
 

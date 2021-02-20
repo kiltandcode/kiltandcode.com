@@ -4,9 +4,13 @@ layout: default
 
 <article>
   <div class="text-center mb-5 pl-5 pr-5">
-    <hr class="short" />
+    {%
+      include icon.html
+      icon=page.icon
+      alt=page.title
+    %}
 
-    <h1>
+    <h1 class="mt-2">
       {{ page.title }}
     </h1>
 

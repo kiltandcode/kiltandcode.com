@@ -4,16 +4,9 @@ date: 2020-10-14 19:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/04/puppeteer-logo.png
+icon: puppeteer.png
 category: puppeteer
 ---
-
-{%
-    include image-lead.html
-    year='2019'
-    month='04'
-    file='puppeteer-logo.png'
-    alt='Puppeteer Logo'
-%}
 
 As a keen [Spotify](https://www.spotify.com/) user that is always in search of new albums and artists to 
 listen to, I was particularly interested when I heard that [Rolling Stone](https://www.rollingstone.com/) 
