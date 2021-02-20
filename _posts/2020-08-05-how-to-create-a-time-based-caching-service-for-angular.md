@@ -8,14 +8,6 @@ icon: angular.png
 category: angular
 ---
 
-{%
-    include image-lead.html
-    year='2020'
-    month='06'
-    file='angular-logo.png'
-    alt='Angular logo'
-%}
-
 If you're interested in building a caching service for Angular that will store the observable for a HTTP call in cache, 
 there is an excellent article by [Yury Katkov](https://medium.com/better-programming/how-to-create-a-caching-service-for-angular-bfad6cbe82b0) 
 that will explain exactly how to do this using [RxJS](https://rxjs.dev/).

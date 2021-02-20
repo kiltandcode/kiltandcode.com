@@ -4,26 +4,27 @@ title: All Articles
 ---
 
 {% for post in site.posts %}
-    <div class="mb-4 mt-4">
-        {%
-            include icon.html
-            icon=post.icon
-            alt=post.title
-        %}
-        
+    <div class="pb-3 pt-3 clearfix">
         <h4>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h4>
         
-        <div class="text-secondary small mb-4">
+        <div class="text-secondary small mb-2">
             {%
                 include written-on.html
                 date=post.date
             %}
         </div>
-
-        <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 240 | escape }}</p>
         
-        <hr />
+        {%
+            include icon.html
+            icon=post.icon
+            alt=post.title
+            class='img-fluid float-left mr-3 mb-1'
+        %}
+
+        <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 300 | escape }}</p>
     </div>
+
+    <hr />
 {% endfor %}

@@ -8,14 +8,6 @@ icon: sqlite.png
 category: sql
 ---
 
-{%
-    include image-lead.html
-    year='2021'
-    month='01'
-    file='sqlite-on-windows.png'
-    alt='SQLite Download Page'
-%}
-
 Unlike modern versions of macOS, SQLite isn't installed by default on Windows. If you're using Windows 
 like I am, you need to complete a few extra steps before you can start using it.
 

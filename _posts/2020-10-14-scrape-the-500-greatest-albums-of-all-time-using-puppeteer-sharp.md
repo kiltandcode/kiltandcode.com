@@ -8,14 +8,6 @@ icon: puppeteer.png
 category: puppeteer
 ---
 
-{%
-    include image-lead.html
-    year='2019'
-    month='04'
-    file='puppeteer-logo.png'
-    alt='Puppeteer Logo'
-%}
-
 As a keen [Spotify](https://www.spotify.com/) user that is always in search of new albums and artists to 
 listen to, I was particularly interested when I heard that [Rolling Stone](https://www.rollingstone.com/) 
 magazine announced a new, updated list of their 

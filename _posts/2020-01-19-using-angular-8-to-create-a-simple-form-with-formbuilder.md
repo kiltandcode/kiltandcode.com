@@ -8,14 +8,6 @@ icon: angular.png
 category: angular
 ---
 
-{%
-    include image-lead.html
-    year='2020'
-    month='06'
-    file='angular-logo.png'
-    alt='Angular logo'
-%}
-
 If you've chosen to use Angular to build the UI for your web application, or find yourself using it in an existing project, the chances are high that you're going to create a form at some point. When I was searching for how to build one myself, I found there were several contradicting examples for different versions of Angular.
 
 This example is for Angular 8 and essentially borrows heavily from the official Google [documentation](https://angular.io/start/forms). There is one *"gotcha"* that wasn't included in the documentation that stumped me along the way, so hopefully this helps someone building their first Angular form.

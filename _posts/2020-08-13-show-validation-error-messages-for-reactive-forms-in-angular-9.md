@@ -8,14 +8,6 @@ icon: angular.png
 category: angular
 ---
 
-{%
-    include image-lead.html
-    year='2020'
-    month='06'
-    file='angular-logo.png'
-    alt='Angular logo'
-%}
-
 In Angular there are two different types of forms for a user to input data: **reactive** and 
 **template-driven**. I personally prefer using reactive forms as they seem to follow the 
 separation of concerns principle, where the core functionality is in the component and the 

@@ -8,14 +8,6 @@ icon: powershell.png
 category: jekyll
 ---
 
-{%
-    include image-lead.html
-    year='2020'
-    month='06'
-    file='powershell-logo.png'
-    alt='Powershell logo'
-%}
-
 When I moved my website from WordPress to Jekyll, a lot of unnecessary images were transferred over that were 
 increasing the size of the GitHub repository by as much as 40%.
 

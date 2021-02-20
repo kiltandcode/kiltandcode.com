@@ -8,14 +8,6 @@ icon: angular.png
 category: angular
 ---
 
-{%
-    include image-lead.html
-    year='2020'
-    month='06'
-    file='angular-logo.png'
-    alt='Angular logo'
-%}
-
 Roughly a year ago I was beginning a new job where one of the requirements was to use [Angular](https://angular.io/) on a daily basis. There was only one problem, I'd never used Angular before. I'd been honest in the interview, saying I'd had a brief introduction to the [React](https://reactjs.org/) framework, but not Angular. Thankfully they were understanding and I was expected to learn on the job.
 
 As developers, we're often capable of learning new frameworks in a relatively short amount of time. This is particularly true if we have a feature-rich application at our disposal that is already using this framework, but what about its foundations? If asked, would we know why we're using that framework? And could we build something from scratch using it?

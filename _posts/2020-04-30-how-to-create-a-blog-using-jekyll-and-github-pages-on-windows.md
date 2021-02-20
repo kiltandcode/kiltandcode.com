@@ -8,14 +8,6 @@ icon: jekyll.png
 category: jekyll
 ---
 
-{%
-    include image-lead.html
-    year='2020'
-    month='04'
-    file='jekyll-logo.png'
-    alt='Jekyll logo'
-%}
-
 Nearly a year ago I migrated from the popular blogging platform [WordPress](https://wordpress.org) to the static site generator [Jekyll](https://jekyllrb.com). Why am I and thousands of other bloggers deciding to move to a static site generator? It's a no-brainer! Why should we install security updates, manage plugins and tune the performance of a website so our pages load fast? Blogging should be all about the writing!
 
 With Jekyll you don't need to worry about all of that. Jekyll has **no admin interface**, **only source files** that you can build using a CLI *(command line interface)* to create a [static website](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/). Simply write your blog posts in [Markdown](https://www.markdownguide.org/) and if you choose to host your website using [GitHub Pages](https://pages.github.com), you can use [Git](https://git-scm.com) to commit and push your changes to publish new posts or pages.
