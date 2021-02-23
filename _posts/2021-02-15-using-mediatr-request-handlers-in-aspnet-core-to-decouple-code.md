@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/02/mediatr_gradient_128x128.png
 icon: mediatr.png
-category: csharp
+tags: csharp mediatr
 ---
 
 MediatR, by it's definition, is a **simple, unambitious mediator implementation 

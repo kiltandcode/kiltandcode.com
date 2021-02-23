@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/07/playing-n64-on-the-pc-using-project64.jpg
 icon: n64-controller.png
-category: retro-gaming
+tags: retro-gaming n64
 ---
 
 I think most gamers would say they have a favorite *"all time"* video game console. Maybe you don't have one, or maybe you've got a few, but for me it has to be the [Nintendo 64](https://en.wikipedia.org/wiki/Nintendo_64).

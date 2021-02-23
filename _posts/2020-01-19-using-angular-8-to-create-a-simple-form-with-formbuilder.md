@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/01/2020-01-18 21_23_03-app.component.png
 icon: angular.png
-category: angular
+tags: angular
 ---
 
 If you've chosen to use Angular to build the UI for your web application, or find yourself using it in an existing project, the chances are high that you're going to create a form at some point. When I was searching for how to build one myself, I found there were several contradicting examples for different versions of Angular.

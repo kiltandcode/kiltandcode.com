@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/01/sqlite-on-windows.png
 icon: sqlite.png
-category: sql
+tags: sqlite windows
 ---
 
 Unlike modern versions of macOS, SQLite isn't installed by default on Windows. If you're using Windows 

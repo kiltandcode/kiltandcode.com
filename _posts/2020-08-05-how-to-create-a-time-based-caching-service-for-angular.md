@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/angular-logo.png
 icon: angular.png
-category: angular
+tags: angular
 ---
 
 If you're interested in building a caching service for Angular that will store the observable for a HTTP call in cache, 

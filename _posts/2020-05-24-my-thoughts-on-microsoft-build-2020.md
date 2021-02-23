@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/05/msbuild-session-catalog.png
 icon: dotnetcore.png
-category: microsoft
+tags: microsoft dotnet-core
 ---
 
 Microsoft Build 2020 is over for another year, but for those of us that didn’t get a chance to watch the live stream, now is the perfect time to watch all of those sessions recorded over the last few days.

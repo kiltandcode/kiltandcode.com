@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/angular-logo.png
 icon: angular.png
-category: angular
+tags: angular popular
 ---
 
 In Angular there are two different types of forms for a user to input data: **reactive** and 
