@@ -6,7 +6,7 @@ layout: post
 permalink: /azure-logic-apps-how-to-use-microsofts-serverless-codeless-integration-platform/
 image: /assets/img/2019/03/5-visualdesigner-getstarted.png
 icon: azure.png
-category: azure
+tags: azure logic-apps
 ---
 
 Azure Logic Apps is a powerful **serverless** integration platform released by Microsoft in [2016](https://azure.microsoft.com/en-us/blog/announcing-azure-logic-apps-general-availability/). The definition of a \'*Logic App\'* is open to interpretation *(in my opinion)*, as the user defines what the Logic App is by integrating many different applications and services to accomplish their goal.

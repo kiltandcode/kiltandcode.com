@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/06/test-explorer.png
 icon: csharp.png
-category: csharp
+tags: csharp unit-testing popular
 ---
 
 In my experience, developers have a love hate relationship with unit testing. I don’t know if some find it tedious, or some just don’t see the value in writing code to verify if other code works.

@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/05/visual-studio-97.png
 icon: retro-windows.png
-category: revisiting
+tags: microsoft revisiting
 ---
 
 If you're like me, you're currently in self-isolation during the COVID-19 pandemic - spending a lot more time indoors than usual.

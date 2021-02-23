@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/04/puppeteer-logo.png
 icon: puppeteer.png
-category: puppeteer
+tags: csharp puppeteer-sharp
 ---
 
 As a keen [Spotify](https://www.spotify.com/) user that is always in search of new albums and artists to 

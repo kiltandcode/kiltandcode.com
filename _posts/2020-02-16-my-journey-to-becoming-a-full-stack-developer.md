@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/02/cartoon-teenager-at-computer.jpg
 icon: cartoon-scottish-face.png
-category: career
+tags: lifestyle career
 ---
 
 Do you remember the early 2000's when there was no Facebook, YouTube or iPhone? The technology landscape was very different at the time.

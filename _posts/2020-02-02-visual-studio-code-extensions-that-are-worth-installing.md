@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/02/vscode-extensions.png
 icon: vscode.png
-category: vscode
+tags: vscode
 ---
 
 Visual Studio Code is a code editor that has me falling head over heels for full stack development all over again. Visual Studio's younger sibling, [Visual Studio Code](https://code.visualstudio.com/) is built using the [Electron](https://www.electronjs.org/) framework, is [open source](https://github.com/microsoft/vscode) and was recently announced as the [default](https://developers.facebook.com/blog/post/2019/11/19/facebook-microsoft-partnering-remote-development/) development environment at Facebook. It's no surprise that it's now the most popular development environment according to the [Stack Overflow Developer Survey 2019](https://insights.stackoverflow.com/survey/2019). Controversially, it's *predicted* to be on track to [replace](https://movingfulcrum.com/visual-studio-code-will-replace-visual-studio/) Visual Studio one day.

@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/05/attribute-usage.png
 icon: csharp.png
-category: csharp
+tags: csharp
 ---
 
 You would think after using a programming language for years that you've seen it all - we all know this simply isn't the case. Custom attributes is a feature of C# that I had seen being used by others, but had never actually used myself. Well, it's time to change that!

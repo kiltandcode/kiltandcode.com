@@ -1,0 +1,23 @@
+<div class="pb-2 pt-3 clearfix">
+    <h4>
+        <a href="{{ site.baseurl }}{{ include.url }}">{{ include.title }}</a>
+    </h4>
+    
+    <div class="text-secondary small mb-3">
+        {%
+            include written-on.html
+            date=include.date
+        %}
+    </div>
+    
+    {%
+        include icon.html
+        icon=include.icon
+        alt=include.title
+        class='img-fluid float-left mr-3 mb-1'
+    %}
+
+    <p>{{ include.excerpt | strip_html | normalize_whitespace | truncate: 300 | escape }}</p>
+</div>
+
+<hr />

@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/angular-logo.png
 icon: angular.png
-category: angular
+tags: angular
 ---
 
 Have you ever looked for a piece of HTML in the code of an Angular app and found something similar to ***&lt;ng-container *ngTemplateOutlet="navBarTemplate"&gt;&lt;/ng-container&gt;*** instead?

@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/06/canada-day.png
 icon: cartoon-scottish-face.png
-category: career
+tags: lifestyle career
 ---
 
 In January 2017 I immigrated to Toronto, Canada with my wife *(a Canadian citizen born in Toronto)*. We met in Glasgow, Scotland where she was studying as an international student and after dating for a few years, we married in Edinburgh in January 2016. A year later we'd been told by the Canadian government that our visa application had been successful and we were given a prompt deadline to land in the country.

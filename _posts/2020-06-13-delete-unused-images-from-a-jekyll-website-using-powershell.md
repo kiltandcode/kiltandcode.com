@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/powershell-logo.png
 icon: powershell.png
-category: jekyll
+tags: powershell jekyll
 ---
 
 When I moved my website from WordPress to Jekyll, a lot of unnecessary images were transferred over that were 

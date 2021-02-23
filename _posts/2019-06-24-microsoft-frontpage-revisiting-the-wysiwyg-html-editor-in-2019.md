@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/06/msfrontpage-website-example.png
 icon: retro-windows.png
-category: revisiting
+tags: microsoft revisiting
 ---
 
 In the late 1990’s and early 2000’s, before platforms such as [WordPress](https://wordpress.org/) and [Squarespace](https://www.squarespace.com) offered non-programmers the ability to build websites, there were **WYSIWYG** *(What You See Is What You Get)* tools, one of these being Microsoft FrontPage.
