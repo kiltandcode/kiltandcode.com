@@ -12,8 +12,6 @@ In my experience, developers have a love hate relationship with unit testing. I 
 
 I should elaborate. Unit testing is the art of writing code to verify if a unit of functionality in a software application is working the way it was intended to work. If the intention was to capitalize the first letter of a word, a unit test could verify that the first letter is capitalized and all the other letters remain untouched.
 
-> Unit testing is the art of writing code to verify if a unit of functionality in a software application is working the way it was intended to work.
-
 In my opinion, one of the benefits of writing unit tests in C# is the peace of mind of using the [Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019) in Visual Studio to easily determine if all tests pass or fail, without having to worry if the last change you made to the code broke anything.
 
 {%
@@ -44,7 +42,7 @@ I wouldn’t spend too much time considering the testing framework to use in you
 
 Before we begin to unit test our code, it’s worth mentioning the ***’AAA’ (Arrange, Act, Assert) *** approach to unit testing. This is common practice in the industry and enables you to write a unit test in a repeatable and understandable pattern.
 
-*I’ll be using the class ‘WordUtils’ and the method ‘Reverse’ for the purpose of this article. The class has a constructor that will accept an instance of ‘ILogger’ for logging purposes. The method ‘Reverse’ will accept a string parameter and return the string in reverse. E.g. “mountain” will become “niatnuom”.*
+I’ll be using the class ‘WordUtils’ and the method ‘Reverse’ for the purpose of this article. The class has a constructor that will accept an instance of ‘ILogger’ for logging purposes. The method ‘Reverse’ will accept a string parameter and return the string in reverse. E.g. “mountain” will become “niatnuom”.
 
 ### Arrange
 
@@ -73,7 +71,7 @@ string result = wordUtils.Reverse(“mountain”);
 
 Finally, we’ll ***“assert”*** that the actual result of the invoked method is equal to our expectation.
 
-In the example below; the variable *‘result’* should be equal to *”niatnuom”* *(*”mountain”* in reverse)*:
+In the example below; the variable *‘result’* should be equal to *”niatnuom”* *(”mountain” in reverse)*:
 
 ```csharp
 // Assert
@@ -242,4 +240,4 @@ public void Reverse_ShouldInvokeOnce_LogInformationMethod()
 
 ## GitHub Repository
 
-The code in this article is available at [github.com/kiltandcode/unit-test-best-practice-demo-project](https://github.com/kiltandcode/unit-test-best-practice-demo-project)
+The code in this article is available at [github.com/kiltandcode/unit-test-best-practice-demo-project](https://github.com/kiltandcode/unit-test-best-practice-demo-project).
