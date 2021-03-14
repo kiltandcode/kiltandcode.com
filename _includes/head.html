@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Permanent+Marker&display=swap" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/stylesheet.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css" />
+
+{% feed_meta %}
+
+{% assign apple-touch-icon = site.data.settings.apple-touch-icon | default : '' %}
+{% assign favicon-32 = site.data.settings.favicon-32 | default : '' %}
+{% assign favicon-16 = site.data.settings.favicon-16 | default : '' %}
+{% assign site-manifest = site.data.settings.site-manifest | default : '' %}
+{% if apple-touch-icon.size > 0 %}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ apple-touch-icon }}" />
+{% endif %}
+{% if favicon-32.size > 0 %}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ favicon-32 }}" />
+{% endif %}
+{% if favicon-16.size > 0 %}
+<link rel="icon" type="image/png" sizes="16x16" href="{{ favicon-16 }}" />
+{% endif %}
+{% if site-manifest.size > 0 %}
+<link rel="manifest" href="{{ site-manifest }}" />
+{% endif %}
+
+{% seo title=false %}
+
+<title>
+  {% if page.title %}
+    {{ page.title }} - {{ site.title }}
+  {% else %}
+    {{ site.title }} - {{ site.description }}
+  {% endif %}
+</title>

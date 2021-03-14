@@ -2,43 +2,31 @@
 layout: default
 ---
 
-<div class="row">
-  <div class="col-md-9">
-    <h1 style="font-size: 2.3rem;" class="mb-4">
-      Welcome to {{ site.title }}! A <em>"<a href="https://www.urbandictionary.com/define.php?term=wee">wee</a>"</em> 
-      software development blog.
-    </h1>
+<h1>
+    Welcome to {{ site.title }}! A <em>"<a href="https://www.urbandictionary.com/define.php?term=wee">wee</a>"</em> 
+    software development blog.
+</h1>
 
-    <p>{{ site.title }} is written by <a href="{{ site.baseurl }}/about">Steven McLintock</a>, a Scottish software developer. 
-      I enjoy writing about the things I learn, primarily on the languages and frameworks I use on a daily basis. You can also read about 
-      <a href="{{ site.baseurl }}/2020/02/16/my-journey-to-becoming-a-full-stack-developer/">my journey to becoming a full stack developer</a>, 
-      <a href="{{ site.baseurl }}/2019/06/30/coming-to-canada-immigrating-to-toronto-as-a-dotnet-developer/">immigrating to Toronto as a .NET developer</a> 
-      and more in the <a href="{{ site.baseurl }}/articles">archives</a>.
-    </p>
-  </div>
+<p>{{ site.title }} is written by <a href="{{ site.baseurl }}/about">Steven McLintock</a>, a Scottish software developer. 
+  I enjoy writing about the things I learn, primarily on the languages and frameworks I use on a daily basis. You can also read about 
+  <a href="{{ site.baseurl }}/2020/02/16/my-journey-to-becoming-a-full-stack-developer/">my journey to becoming a full stack developer</a>, 
+  <a href="{{ site.baseurl }}/2019/06/30/coming-to-canada-immigrating-to-toronto-as-a-dotnet-developer/">immigrating to Toronto as a .NET developer</a> 
+  and more in the <a href="{{ site.baseurl }}/articles">archives</a>.
+</p>
 
-  <div class="col-md-3">
-    <img src="{{ site.baseurl }}/assets/img/cartoon-scottish-developer.png" alt="Cartoon Scottish Developer" class="img-fluid mx-auto d-block" />
-  </div>
-</div>
+<img src="{{ site.baseurl }}/assets/img/cartoon-scottish-developer.png" alt="Cartoon Scottish Developer" />
 
-<div class="row">
-  <div class="col-md-12">
-    <h2 class="mt-4">
-      Latest Articles
-    </h2>
-    
-    {% for post in site.posts limit:3 %}
-      {%
-        include article-preview.html
-        url=post.url
-        title=post.title
-        date=post.date
-        icon=post.icon
-        excerpt=post.excerpt
-      %}
-    {% endfor %}
+<h2>Latest Articles</h2>
 
-    <a class="btn btn-outline-secondary mb-4 mb-md-0" href="{{ site.baseurl }}/articles">View all articles</a>
-  </div>
-</div>
+{% for post in site.posts limit:3 %}
+  {%
+    include article-preview.html
+    url=post.url
+    title=post.title
+    date=post.date
+    icon=post.icon
+    excerpt=post.excerpt
+  %}
+{% endfor %}
+
+<a href="{{ site.baseurl }}/articles">View all articles</a>

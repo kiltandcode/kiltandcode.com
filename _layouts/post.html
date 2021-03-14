@@ -3,60 +3,38 @@ layout: default
 ---
 
 <article>
-  <div class="text-center mb-5 pl-5 pr-5">
+  <section class="post-header">
     {%
       include icon.html
       icon=page.icon
       alt=page.title
     %}
 
-    <h1 class="mt-2">
+    <h1>
       {{ page.title }}
     </h1>
 
-    <div class="text-secondary small">
-      {%
-        include written-on.html
-        date=page.date
-        author=page.author
-      %}
-    </div>
-  </div>
+    <small><em>By {{ page.author }} on {% include written-on.html date=page.date %}</em></small>
+  </section>
+
+  {{ content }}
+
+  <img src="{{ site.baseurl }}/assets/img/2019/04/me-waterfall.jpg" alt="Steven McLintock" width="100" height="100" />
+
+  <h5>About the Author</h5>
   
-  <div class="mt-5 mb-5">
-    {{ content }}
-  </div>
-
-  <div class="card bg-light mt-5 mb-5">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-2">
-          <img src="{{ site.baseurl }}/assets/img/2019/04/me-waterfall.jpg" 
-            alt="Steven McLintock" 
-            width="100" 
-            height="100" 
-            class="rounded-circle img-fluid mx-auto mb-2 d-block" />
-        </div>
-        
-        <div class="col-md-10">
-          <h5 class="card-title">About the Author</h5>
-
-          <p class="card-text">
-              <small>
-                {{ site.title }} is a blog written by <a href="{{ site.baseurl }}/about">Steven McLintock</a>, 
-                a Scottish software developer living in Stratford, Ontario. Steven primarily uses Microsoft's 
-                <a href="https://dotnet.microsoft.com/" title=".NET">.NET</a> platform and has been working 
-                as a developer since 2006.
-              </small>
-          </p>
-          
-          <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-          <script type='text/javascript'>
-            kofiwidget2.init('Buy me a coffee', '#29abe0', 'C0C42LJ9W');
-            kofiwidget2.draw();
-          </script>
-        </div>
-      </div>
-    </div>
-  </div>
+  <p>
+      <small>
+        {{ site.title }} is a blog written by <a href="{{ site.baseurl }}/about">Steven McLintock</a>, 
+        a Scottish software developer living in Stratford, Ontario. Steven primarily uses Microsoft's 
+        <a href="https://dotnet.microsoft.com/" title=".NET">.NET</a> platform and has been working 
+        as a developer since 2006.
+      </small>
+  </p>
+  
+  <script src="https://ko-fi.com/widgets/widget_2.js"></script>
+  <script>
+    kofiwidget2.init('Buy me a coffee', '#29abe0', 'C0C42LJ9W');
+    kofiwidget2.draw();
+  </script>
 </article>

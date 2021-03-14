@@ -20,7 +20,7 @@ Azure Batch has a few benefits over Azure Functions / Logic Apps:
 
 Mark Scurrell of Microsoft can be seen in the walk-through below demonstrating some of the capabilities of Azure Batch.
 
-{% include embed.html src='https://www.youtube.com/embed/Ol8TawZQimc?rel=0' %}
+{% include embed-video.html src='https://www.youtube.com/embed/Ol8TawZQimc?rel=0' %}
 
 ## Getting Started
 

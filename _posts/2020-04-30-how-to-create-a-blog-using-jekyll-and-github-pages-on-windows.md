@@ -100,12 +100,6 @@ Thats it! If you check the folder, Jekyll will have created the necessary files 
 
 **Let's see how it looks!** I'm going to use the free code editor [Visual Studio Code](https://code.visualstudio.com) by [Microsoft](https://www.microsoft.com/) for the remainder of this tutorial to execute commands in a terminal *and* be able to edit the Jekyll files in the same workspace.
 
-{%
-    include bs-callout.html
-    header='Tip'
-    content='For a list of useful Visual Studio Code extensions, check out my article <a href="https://kiltandcode.com/2020/02/02/visual-studio-code-extensions-that-are-worth-installing/">25+ Visual Studio Code Extensions That Are Worth Installing</a>.'
-%}
-
 Open the Jekyll folder in Visual Studio Code and create a new terminal *(**Ctrl+`**)*. Now we can run the command to build and locally serve our Jekyll blog:
 
 ```terminal
@@ -365,14 +359,6 @@ git push -u origin master
 ```
 
 That's it! You'll now be able to view your Jekyll blog at the address https://username.github.io.
-
-{%
-    include bs-callout.html
-    header='Tip'
-    content='Want to host your blog at your own custom domain name? Please see the GitHub Pages 
-    <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site">documentation</a> 
-    for more information.'
-%}
 
 ## Conclusion
 

@@ -28,7 +28,7 @@ Buried in the thousands of videos on Microsoft's [Channel 9](https://channel9.ms
 ## Part One
 
 {%
-    include embed.html
+    include embed-video.html
     src='https://channel9.msdn.com/Series/VisualStudioDocumentary/The-Visual-Studio-Documentary-Part-One/player'
 %}
 
@@ -36,19 +36,12 @@ All of the full length interviews filmed for the documentary are also available 
 
 It's definitely worth a watch and is only an hour in length. Beginning with the early days of MS-DOS, OS/2 and Windows, the documentary continues to explain the introduction of Visual Basic *(originally Tripod by [Alan Cooper](https://twitter.com/MrAlanCooper))* and how Microsoft saw the opportunity to merge its several development environments, such as Visual Basic, Visual C++ and FoxPro into one product.
 
-{%
-    include bs-callout.html
-    header='Quote'
-    callout='bs-callout-info'
-    content='<em>"We named it Visual Studio because we thought of it as an artists pallet. You could look at your pallet and find all the tools there. You could reach in and build high performance applications that were highly productive right there in Visual Studio."</em>'
-%}
-
 I thought it was amusing to find out that the first version of Visual Studio was simply each of the development environments already on the market - bundled, re-branded and shrink-wrapped as one *(huge)* new product. It must have been a nightmare to install!
 
 ## Part Two
 
 {%
-    include embed.html
+    include embed-video.html
     src='https://channel9.msdn.com/Series/VisualStudioDocumentary/The-Visual-Studio-Documentary-Part-Two/player'
 %}
 

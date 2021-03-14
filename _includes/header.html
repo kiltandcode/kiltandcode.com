@@ -1,0 +1,28 @@
+{% assign motif-src = site.data.settings.motif.src | default : '' %}
+{% assign motif-width = site.data.settings.motif.width | default : '' %}
+{% assign motif-height = site.data.settings.motif.height | default : '' %}
+<header>
+    {% if motif-src.size > 0 and motif-width.size > 0 and motif-height.size > 0 %}
+    <section>
+        <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ motif-src }}" alt="{{ site.title }}" width="{{ motif-width }}" height="{{ motif-height }}" /></a>
+    </section>
+    {% endif %}
+    <section class="logo-title">
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </section>
+
+    <nav>
+        <ul>
+            {% for item in site.data.settings.menu %}
+            {% assign page_url = page.url | remove: '/' %}
+            {% assign item_url = item.url | remove: '/' %}
+    
+            {% if page_url == item_url %}
+                <li><small>{{ item.name }}</small></li>
+            {% else %}
+                <li><small><a href="{{ site.baseurl }}/{{ item.url }}">{{ item.name }}</a></small></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
