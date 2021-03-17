@@ -5,7 +5,7 @@ title: All Articles
 
 {% for post in site.posts %}
     {%
-        include article-preview.html
+        include article-summary.html
         url=post.url
         title=post.title
         date=post.date

@@ -1,4 +1,5 @@
-# If you are not using Google Analytics, please change to an empty string
+# If you are not using Google Analytics, 
+# please change to an empty string
 google-analytics: 'UA-140918235-1'
 
 # The primary language used by this website
@@ -10,7 +11,8 @@ favicon-32: '/favicon-32x32.png'
 favicon-16: '/favicon-16x16.png'
 site-manifest: '/site.webmanifest'
 
-# If you are not using a motif, please set each value as an empty string
+# If you are not using a motif, 
+# please set each value as an empty string
 motif:
   src: '/assets/img/cartoon-scottish-face.png'
   width: '83'
