@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-{{ site.title }} is written by Steven McLintock, a full-stack software developer 
+{{ site.title }} is the personal website of Steven McLintock, a full-stack software developer 
 specializing in Microsoft languages and platforms such as .NET, C# and Azure. I also 
 enjoy writing articles for this website, [kiltandcode.com](https://kiltandcode.com).
 

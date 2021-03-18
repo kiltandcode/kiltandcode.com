@@ -12,5 +12,5 @@ plugins: [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customize atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Kilt and Code'
-description:	       'A personal website by Steven McLintock'
+description:	       'The personal website of Steven McLintock'
 author:              'Steven McLintock'

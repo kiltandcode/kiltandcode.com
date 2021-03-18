@@ -1,7 +1,8 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* Reset CSS (http://meyerweb.com/eric/tools/css/reset/)
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,8 +52,8 @@ table {
 	border-spacing: 0;
 }
 
-/* These are the styles for the 
-   theme for kiltandcode.com
+/* Set styles for the page elements 
+   supported by the browser
 */
 
 html, body {
@@ -148,6 +149,15 @@ ol ol, ul ol {
   margin-left: 15px;
 }
 
+hr {
+  background-color: #808080;
+  margin: 20px auto;
+}
+
+/* Define the styles for a section 
+   containing an iframe element
+*/
+
 section.iframe-container {
   overflow: hidden;
   /* 16:9 aspect ratio */
@@ -163,6 +173,10 @@ section.iframe-container iframe {
    top: 0;
    width: 100%;
 }
+
+/* Set the spacing between common
+   page elements
+*/
 
 p + p, p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, p + figure, p + img, p + figure, p + table, 
 p + ul, p + ol, p + .iframe-container, p + .highlighter-rouge, figure + p, figure + h1, figure + h2, 
@@ -195,10 +209,9 @@ h3 + ol, h4 + ol, h5 + ol, h6 + ol {
   margin-top: 8px;
 }
 
-hr {
-  background-color: #808080;
-  margin: 20px auto;
-}
+/* Style the figure page element and 
+   figcaption used for displaying images
+*/
 
 figure.image {
   text-align: center;
@@ -208,6 +221,11 @@ figure.image figcaption {
   color: #808080;
   margin-top: 5px;
 }
+
+/* Begin to style the page structure, 
+   e.g. the container (main), header and
+   footer
+*/
 
 main {
   margin: 0 auto;
@@ -290,6 +308,11 @@ summary.article + summary.article {
   margin-top: 70px;
 }
 
+/* We need a few styles for the 
+   'About the Author' section at the 
+   bottom of the post template
+*/
+
 .article-summary-header {
   margin-bottom: 12px;
 }
@@ -298,7 +321,38 @@ summary.article + summary.article {
   margin-bottom: 5px;
 }
 
+.about-the-author {
+  display: table;
+  margin-top: 70px;
+  vertical-align: top;
+}
+
+.about-the-author-left, .about-the-author-right {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.about-the-author-left {
+  width: 100px;
+}
+
+.about-the-author-right {
+  padding-left: 30px;
+}
+
+/* Add styles for miscellaneous 
+   page elements here
+*/
+
 .highlighter-rouge {
   font-family:'Courier New', Courier, monospace;
   overflow: auto;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.text-center {
+  text-align: center;
 }
