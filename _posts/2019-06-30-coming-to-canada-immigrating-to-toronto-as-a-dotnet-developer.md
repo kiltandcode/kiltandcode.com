@@ -4,7 +4,7 @@ date: 2019-06-30 22:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/06/canada-day.png
-icon: cartoon-scottish-face.png
+icon: steven.png
 tags: lifestyle career
 ---
 

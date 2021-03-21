@@ -4,7 +4,7 @@ date: 2020-02-16 9:46:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/02/cartoon-teenager-at-computer.jpg
-icon: cartoon-scottish-face.png
+icon: steven.png
 tags: lifestyle career
 ---
 

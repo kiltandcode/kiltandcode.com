@@ -115,6 +115,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   border-bottom-color: rgba(0, 0, 0, 1);
 }
 
+th, td {
+  padding: 10px;
+}
+
 small {
   font-size: 80%;
 }
@@ -264,18 +268,29 @@ section.logo-title {
 
 footer {
   color: #808080;
-  font-size: 80%;
   margin: 70px 0 10px 0;
   text-align: center;
 }
 
-footer a {
-  border-bottom: none;
-  color: #808080;
-  font-weight: normal;
+footer nav {
+  margin-bottom: 20px;
 }
 
-footer a:hover {
+footer a {
+  font-weight: normal;
+  border-bottom: none;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+footer nav ul li a {
+  color: #808080;
+}
+
+footer nav ul li a:hover {
   color: #333;
 }
 
@@ -346,8 +361,17 @@ summary.article + summary.article {
   overflow: auto;
 }
 
-.rounded {
+img.circle {
   border-radius: 50%;
+}
+
+a.button {
+  background-color: #d8d8d8;
+  border-bottom: none;
+  border-radius: 3px;
+  font-weight: normal;
+  padding: 8px 12px;
+  
 }
 
 .text-center {

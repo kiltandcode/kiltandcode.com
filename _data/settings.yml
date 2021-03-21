@@ -18,7 +18,14 @@ motif:
   width: '83'
   height: '89'
 
-# Menu
-menu:
-- { name: 'About', url: 'about' }
-- { name: 'Articles', url: 'articles' }
+# Header menu
+header-menu:
+- { name: 'About', url: '/about' }
+- { name: 'Articles', url: '/articles' }
+
+# Footer menu
+footer-menu:
+- { name: 'Home', url: '/' }
+- { name: 'About', url: '/about' }
+- { name: 'Articles', url: '/articles' }
+- { name: 'RSS', url: '/feed.xml' }

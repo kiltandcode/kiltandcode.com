@@ -25,6 +25,6 @@ title: Kilt and Code is the personal website of <a href="/about">Steven McLintoc
   %}
 {% endfor %}
 
-<div class="text-center" style="margin-top: 35px;">
-  <a href="{{ site.baseurl }}/articles">View all articles</a>
-</div>
+<section class="text-center" style="margin-top: 45px;">
+  <a href="{{ site.baseurl }}/articles" class="button">View all articles</a>
+</section>
