@@ -342,45 +342,8 @@ summary.article + summary.article {
 */
 
 section.about-the-author {
-  display: table;
   margin-top: 70px;
-  vertical-align: top;
-}
-
-section.about-the-author-left, section.about-the-author-right {
-  display: table-cell;
-  vertical-align: top;
-}
-
-section.about-the-author-left {
-  width: 100px;
-}
-
-section.about-the-author-right {
-  padding-left: 30px;
-}
-
-/* Style the "jumbotron" used on the 
-   homepage
-*/
-
-section.jumbotron {
-  display: table;
-  margin-bottom: 35px;
-  vertical-align: top;
-}
-
-section.jumbotron-left, section.jumbotron-right {
-  display: table-cell;
-  vertical-align: top;
-}
-
-section.jumbotron-left {
-  padding-right: 30px;
-}
-
-section.jumbotron-right {
-  width: 400px;
+  text-align: center;
 }
 
 /* Add styles for miscellaneous 
@@ -392,36 +355,6 @@ section.jumbotron-right {
   overflow: auto;
 }
 
-img.rounded {
-  border-radius: 10px;
-}
-
 .text-center {
   text-align: center;
-}
-
-/* Alternative stylesheets for 
-   smaller devices. I really don't 
-   like doing this stuff, but it's 
-   a necessary evil.
-*/
-
-@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
-  section.jumbotron {
-    display: block;
-  }
-  
-  section.jumbotron-left, section.jumbotron-right {
-    display: block;
-    text-align: center;
-  }
-  
-  section.jumbotron-left {
-    padding-right: 0px;
-    padding-bottom: 30px;
-  }
-  
-  section.jumbotron-right {
-    width: auto;
-  }
 }
