@@ -213,6 +213,14 @@ h3 + ol, h4 + ol, h5 + ol, h6 + ol {
   margin-top: 8px;
 }
 
+/* This specific exception is for the 
+   homepage jumbotron, just to give it 
+   a little more space.
+*/
+h1 + p {
+  margin-top: 18px;
+}
+
 /* Style the figure page element and 
    figcaption used for displaying images
 */
@@ -320,11 +328,6 @@ summary.article + summary.article {
   margin-top: 70px;
 }
 
-/* We need a few styles for the 
-   'About the Author' section at the 
-   bottom of the post template
-*/
-
 .article-summary-header {
   margin-bottom: 12px;
 }
@@ -333,23 +336,51 @@ summary.article + summary.article {
   margin-bottom: 5px;
 }
 
-.about-the-author {
+/* We need a few styles for the 
+   'About the Author' section at the 
+   bottom of the post template
+*/
+
+section.about-the-author {
   display: table;
   margin-top: 70px;
   vertical-align: top;
 }
 
-.about-the-author-left, .about-the-author-right {
+section.about-the-author-left, section.about-the-author-right {
   display: table-cell;
   vertical-align: top;
 }
 
-.about-the-author-left {
+section.about-the-author-left {
   width: 100px;
 }
 
-.about-the-author-right {
+section.about-the-author-right {
   padding-left: 30px;
+}
+
+/* Style the "jumbotron" used on the 
+   homepage
+*/
+
+section.jumbotron {
+  display: table;
+  margin-bottom: 35px;
+  vertical-align: top;
+}
+
+section.jumbotron-left, section.jumbotron-right {
+  display: table-cell;
+  vertical-align: top;
+}
+
+section.jumbotron-left {
+  padding-right: 30px;
+}
+
+section.jumbotron-right {
+  width: 400px;
 }
 
 /* Add styles for miscellaneous 
@@ -361,19 +392,36 @@ summary.article + summary.article {
   overflow: auto;
 }
 
-img.circle {
-  border-radius: 50%;
-}
-
-a.button {
-  background-color: #d8d8d8;
-  border-bottom: none;
-  border-radius: 3px;
-  font-weight: normal;
-  padding: 8px 12px;
-  
+img.rounded {
+  border-radius: 10px;
 }
 
 .text-center {
   text-align: center;
+}
+
+/* Alternative stylesheets for 
+   smaller devices. I really don't 
+   like doing this stuff, but it's 
+   a necessary evil.
+*/
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+  section.jumbotron {
+    display: block;
+  }
+  
+  section.jumbotron-left, section.jumbotron-right {
+    display: block;
+    text-align: center;
+  }
+  
+  section.jumbotron-left {
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  
+  section.jumbotron-right {
+    width: auto;
+  }
 }
