@@ -1,6 +1,6 @@
 ---
 layout: page
-title: All Articles
+title: "All Articles"
 ---
 
 {% for post in site.posts %}

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: "About"
 ---
 
 {{ site.title }} is the personal website of Steven McLintock, a full-stack software developer 

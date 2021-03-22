@@ -27,7 +27,7 @@
 {% seo title=false %}
 
 <title>
-  {% if page.title %}
+  {% if page.title.size > 0 %}
     {{ page.title }} - {{ site.title }}
   {% else %}
     {{ site.title }} - {{ site.description }}

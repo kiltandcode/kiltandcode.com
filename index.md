@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Kilt and Code is the personal website of <a href="/about">Steven McLintock</a>
+title: "Kilt and Code is the personal website of Steven McLintock"
 ---
 
 <section class="text-center">
