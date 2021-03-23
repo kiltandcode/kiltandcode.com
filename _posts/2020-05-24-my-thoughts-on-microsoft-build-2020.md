@@ -16,7 +16,7 @@ Microsoft Build 2020 is over for another year, but for those of us that didn’t
     month='05'
     file='msbuild-session-catalog.png'
     alt='Microsoft Build Session Catalog'
-    caption='Microsoft Build <a href="https://mybuild.microsoft.com/sessions">Session Catalog</a>'
+    caption='Microsoft Build Session Catalog'
 %}
 
 I thought it was interesting that Google is suggesting *"microsoft build 2020 cancelled"* as the first prediction when you search for *"microsoft build 2020"*. I suppose this is a sign of the times and it might well have been a possibility at some point. As reported by [The Verge](https://www.theverge.com/2020/3/4/21164522/microsoft-coronavirus-response-comment-employees-memo-work-from-home) as early as the beginning of March, Microsoft announced that their employees were allowed to work from home during the COVID-19 pandemic, demonstrating *(in my opinion)* their strength as a company to adapt so early on in a public health crisis. A week later, Microsoft Build 2020 became a virtual event to be enjoyed by all.
@@ -61,7 +61,7 @@ This peaked my interest in particular as to sync local Visual Studio Code settin
 I've been using .NET Core in a few projects lately and I was interested to watch the presentation by [Scott Hunter](https://twitter.com/coolcsh) and [Scott Hanselman](https://www.hanselman.com/) on **"The Journey to One .NET"**.
 
 {%
-    include embed.html
+    include embed-video.html
     src='https://channel9.msdn.com/Events/Build/2020/BOD106/player'
 %}
 

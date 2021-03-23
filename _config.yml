@@ -1,16 +1,16 @@
-# Site Build Settings
-
 # Domain name
-baseurl:            ''
-url:                'https://www.kiltandcode.com'
+baseurl: ''
+url: 'https://www.kiltandcode.com'
 
 # Build settings
-markdown:            kramdown
-highlighter:         rouge
-permalink:           /:year/:month/:day/:title/
-plugins:             [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /:year/:month/:day/:title/
+plugins: [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customize atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Kilt and Code'
-description:	       'A Wee Software Development Blog'
+description:	       'The personal website of Steven McLintock'
 author:              'Steven McLintock'

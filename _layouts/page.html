@@ -3,13 +3,13 @@ layout: default
 ---
 
 <article>
-  <div class="text-center mb-5 pl-5 pr-5">
+  {% if page.title.size > 0 %}
+  <section class="page-header">
     <h1>
       {{ page.title }}
     </h1>
-  </div>
+  </section>
+  {% endif %}
   
-  <div class="mt-5">
-    {{ content }}
-  </div>
+  {{ content }}
 </article>

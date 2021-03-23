@@ -1,10 +1,1 @@
-{% assign date = include.date %}
-{% assign author = include.author %}
-
-{% if author.size > 0 %}
-  By {{ author }} on 
-{% endif %}
-
-<time datetime="{{ date | date_to_xmlschema }}">
-  {{ date | date: "%B" }} {{ date | date: "%-d" }}, {{ date | date: "%Y" }}
-</time>
+<time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date: "%B" }} {{ include.date | date: "%-d" }}, {{ include.date | date: "%Y" }}</time>
