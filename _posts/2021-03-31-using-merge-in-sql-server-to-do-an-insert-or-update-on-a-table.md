@@ -57,8 +57,8 @@ INSERT (
 )
 WHEN MATCHED THEN 
 UPDATE SET 
-	[FirstName] = @FirstName,
-	[LastName] = @LastName,
+    [FirstName] = @FirstName,
+    [LastName] = @LastName,
     [Address1] = @Address1,
     [Address2] = @Address2,
     [City] = @City,
@@ -103,15 +103,15 @@ INSERT (
 )
 WHEN MATCHED THEN 
 UPDATE SET 
-	[FirstName] = @FirstName,
-	[LastName] = @LastName,
+    [FirstName] = @FirstName,
+    [LastName] = @LastName,
     [Address1] = @Address1,
     [Address2] = @Address2,
     [City] = @City,
     [Province] = @Province,
     [PostalCode] = @PostalCode,
     [PhoneNumber] = @PhoneNumber,
-	@ContactId = TARGET.[ContactId];
+    @ContactId = TARGET.[ContactId];
 
 SELECT ISNULL(@ContactId, SCOPE_IDENTITY())
 ```
