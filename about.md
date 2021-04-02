@@ -3,7 +3,7 @@ layout: page
 title: "About"
 ---
 
-Kilt and Code is the personal website of Steven McLintock, a Scottish [full stack developer](https://www.kiltandcode.com/2020/02/16/my-journey-to-becoming-a-full-stack-developer/) who lives in Stratford, Ontario. I primarily use [https://dotnet.microsoft.com/](.NET), [C#](https://docs.microsoft.com/en-us/dotnet/csharp/]
+Kilt and Code is the personal website of Steven McLintock, a Scottish [full stack developer](https://www.kiltandcode.com/2020/02/16/my-journey-to-becoming-a-full-stack-developer/) who lives in Stratford, Ontario. I primarily use [.NET](https://dotnet.microsoft.com/), [C#](https://docs.microsoft.com/en-us/dotnet/csharp/]
 ) and [Angular](https://angular.io/) and I've been working as a developer since 2006.
 
 {%
