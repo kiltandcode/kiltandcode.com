@@ -1,14 +1,23 @@
+{% assign about-the-author-name = site.data.settings.about-the-author.name | default : '' %}
+{% assign about-the-author-src = site.data.settings.about-the-author.src | default : '' %}
+{% assign about-the-author-width = site.data.settings.about-the-author.width | default : '' %}
+{% assign about-the-author-height = site.data.settings.about-the-author.height | default : '' %}
+{% assign about-the-author-caption = site.data.settings.about-the-author.caption | default : '' %}
+
 <section class="about-the-author">
-    <img src="{{ site.baseurl }}/assets/img/me-small.jpg" alt="Steven McLintock" width="100" height="100" />
+    {% if about-the-author-name.size > 0 and about-the-author-src.size > 0 and about-the-author-width.size > 0 and about-the-author-height.size > 0 %}
+    <img src="{{ site.baseurl }}{{ about-the-author-src }}" alt="{{ about-the-author-name }}" width="{{ about-the-author-width }}" height="{{ about-the-author-height }}" />
+    {% endif %}
     
     <h6>About the Author</h6>
 
+    {% if about-the-author-caption.size > 0 %}
     <p>
         <small>
-            Kilt and Code is the personal website of <a href="{{ site.baseurl }}/about">Steven McLintock</a>, 
-            a Scottish software developer living in Stratford, Ontario. Steven primarily uses <a href="https://dotnet.microsoft.com/">.NET</a>, C# and <a href="https://angular.io/">Angular</a> and has been working as a developer since 2006. <a href="mailto:stevenmclintock@fastmail.com">Get in touch!</a>
+            {{ about-the-author-caption }}
         </small>
     </p>
+    {% endif %}
     
     <div style="margin-top: 15px;">
         <script src="https://ko-fi.com/widgets/widget_2.js"></script>

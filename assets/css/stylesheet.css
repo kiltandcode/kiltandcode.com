@@ -58,7 +58,7 @@ table {
 
 html, body {
   color: #333;
-  font-family: 'Lora', serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
 }
 
@@ -198,7 +198,7 @@ ul + h3, ul + h4, ul + h5, ul + h6, ul + figure, ul + img, ul + figure, ul + tab
 ul + .iframe-container, ul + .highlighter-rouge, ol + p, ol + h1, ol + h2, ol + h3, ol + h4, ol + h5, 
 ol + h6, ol + figure, ol + img, ol + figure, ol + table, ol + ul, ol + ol, ol + .iframe-container, 
 ol + .highlighter-rouge {
-  margin-top: 18px;
+  margin-top: 25px;
 }
 
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, h1 + figure, h2 + figure, h3 + figure, h4 + figure, 
@@ -210,7 +210,7 @@ h4 + .highlighter-rouge, h5 + .highlighter-rouge, h6 + .highlighter-rouge, img +
 figure + .highlighter-rouge, table + .highlighter-rouge, h1 + img, h2 + img, h3 + img, h4 + img, 
 h5 + img, h6 + img, h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul, h1 + ol, h2 + ol, 
 h3 + ol, h4 + ol, h5 + ol, h6 + ol {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 /* Style the figure page element and 
@@ -234,7 +234,7 @@ figure.image figcaption {
 main {
   margin: 0 auto;
   padding: 10px;
-  max-width: 900px;
+  max-width: 780px;
 }
 
 header {
