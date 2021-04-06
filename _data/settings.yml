@@ -30,7 +30,7 @@ footer-menu:
 - { name: 'Articles', url: '/articles' }
 - { name: 'RSS', url: '/feed.xml' }
 
-#About the author
+# About the author
 about-the-author:
   name: 'Steven McLintock'
   src: '/assets/img/me-small.jpg'
