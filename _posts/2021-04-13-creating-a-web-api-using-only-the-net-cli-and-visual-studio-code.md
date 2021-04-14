@@ -8,9 +8,9 @@ icon: vscode.png
 tags: dotnet vscode csharp
 ---
 
-Have you ever wondered if you could use the .NET CLI and Visual Studio Code to build a new .NET application, instead of relying on Visual Studio to do all of the heavy lifting?
+Have you ever wondered if you could use the **.NET CLI** and **Visual Studio Code** to build a new .NET application, instead of relying on Visual Studio to do all of the heavy lifting?
 
-This tutorial will walk you through creating a new class library, unit test project and Web API using only the .NET CLI and Visual Studio Code.
+This tutorial will walk you through creating a new **class library**, **unit test project** and **web API** using only the .NET CLI and Visual Studio Code.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ This tutorial will walk you through creating a new class library, unit test proj
     caption='C# extension'
 %}
 
-Before we get started, let's first confirm if the .NET CLI is installed correctly by running the following command in the Terminal:
+Before we get started, let's first check if the .NET CLI is installed correctly by running the following command in the Terminal:
 
 ```terminal
 dotnet
@@ -80,7 +80,7 @@ If you would like to explore all of the commands available in the .NET CLI, you 
 
 ### Why Use a Solution in Visual Studio Code?
 
-The solution file is primarily used by Visual Studio to keep track and organize all of the project files in your application. However, the solution file isn't necessarily required in Visual Studio Code, it's optional.
+The solution file is traditionally used by Visual Studio to keep track and organize all of the project files in your application. However, the solution file isn't necessarily required in Visual Studio Code, it's optional.
 
 There are a couple of reasons why you might want to use a solution file in Visual Studio Code:
 
@@ -89,7 +89,7 @@ There are a couple of reasons why you might want to use a solution file in Visua
 
 ## Create a New Class Library
 
-We'll create a new class library that will use the NuGet package *'[DiceRoller](https://www.nuget.org/packages/DiceRoller/)'* to roll one or many dice.
+We'll create a new class library that will use the NuGet package [DiceRoller](https://www.nuget.org/packages/DiceRoller/) to roll one or many dice.
 
 {%
     include image.html
@@ -100,7 +100,7 @@ We'll create a new class library that will use the NuGet package *'[DiceRoller](
     caption='DiceRoller NuGet package'
 %}
 
-Our class **‘RollDice'** will contain the method *‘Roll'* that accepts two parameters, the number of dice to use in our roll, and how many sides each die will have. Let's create the new class library *'DiceRoller.DiceRoll'* by using the following command:
+Our class **‘RollDice'** will contain the method **‘Roll'** that accepts two parameters, the number of dice to use in our roll, and how many sides each die will have. Let's create the new class library **'DiceRoller.DiceRoll'** by using the following command:
 
 ```terminal
 dotnet new classlib -n DiceRoller.DiceRoll
@@ -136,7 +136,7 @@ We'll also use the .NET CLI to add the [DiceRoller](https://www.nuget.org/packag
 dotnet add DiceRoller.DiceRoll/DiceRoller.DiceRoll.csproj package DiceRoller
 ```
 
-Let's rename the auto-generated class *'Class1'* to *'RollDice'*. Visual Studio Code doesn't seem to automatically rename the file, so be sure to rename the file to *'RollDice.cs'* as well.
+Let's rename the auto-generated class **'Class1'** to **'RollDice'**. Visual Studio Code doesn't seem to automatically rename the file, so be sure to rename the file to **'RollDice.cs'** as well.
 
 {%
     include image.html
@@ -147,7 +147,7 @@ Let's rename the auto-generated class *'Class1'* to *'RollDice'*. Visual Studio 
     caption='Rename the auto-generated class'
 %}
 
-We'll also add in the code to call the *'DiceRoller'* NuGet package and pass in our desired parameters. There's also an interface being used that'll come in later when we use dependency injection in the Web API.
+We'll also add in the code to call the **'DiceRoller'** NuGet package and pass in our desired parameters. There's also an interface being used that will come in later when we use dependency injection in the web API.
 
 ```csharp
 using Dice;
@@ -195,7 +195,7 @@ To use the class library in a unit test, we need to add a reference to the class
 dotnet add DiceRoller.DiceRoll.Tests/DiceRoller.DiceRoll.Tests.csproj reference DiceRoller.DiceRoll/DiceRoller.DiceRoll.csproj
 ```
 
-And of course, let's rename the auto-generated *'UnitTest1'* to *'RollDiceTests'* and write a unit test to ensure the result that's returned from a roll of the dice is what we expect:
+And of course, let's rename the auto-generated **'UnitTest1'** to **'RollDiceTests'** and write a unit test to ensure the result that's returned from a roll of the dice is what we expect:
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -232,7 +232,7 @@ Using the .NET CLI, let's run all of the unit tests within our new unit test pro
 dotnet test DiceRoller.DiceRoll.Tests/DiceRoller.DiceRoll.Tests.csproj
 ```
 
-In the integrated terminal, you should receive information on the results of your unit tests *(hopefully they pass!)*:
+In the integrated terminal, you should receive information on the results of your unit tests ***(hopefully they pass!)***:
 
 {%
     include image.html
@@ -245,9 +245,9 @@ In the integrated terminal, you should receive information on the results of you
 
 ## Create a New Web API Project
 
-With scaffolding being built into the .NET CLI, we can use one command to create a Web API with an auto-generated controller, *'Startup.cs'* file and all of the necessary dependencies added as references.
+With scaffolding being built into the .NET CLI, we can use one command to create a web API with an auto-generated controller, **'Startup.cs'** file and all of the necessary dependencies added as references.
 
-Let's use the following command to create a new Web API with scaffolding:
+Let's use the following command to create a new web API with scaffolding:
 
 ```terminal
 dotnet new webapi -n DiceRoller.WebApi
@@ -274,7 +274,7 @@ Similar to the unit test project, we'll also add a reference to the class librar
 dotnet add DiceRoller.WebApi/DiceRoller.WebApi.csproj reference DiceRoller.DiceRoll/DiceRoller.DiceRoll.csproj
 ```
 
-Let's rename the auto-generated controller from *'WeatherForecastController'* to *'RollDiceController'* and add a new endpoint to pass the parameters *'numberOfDice'* and *'sidesPerDie'* to the *'Roll'* method in the class library:
+Let's rename the auto-generated controller from **'WeatherForecastController'** to **'RollDiceController'** and add a new endpoint to pass the parameters *'numberOfDice'* and *'sidesPerDie'* to the **'Roll'** method in the class library:
 
 {%
     include image.html
@@ -314,10 +314,15 @@ namespace DiceRoller.WebApi.Controllers
 }
 ```
 
-Using the interface we created in the class library, we'll modify the *'ConfigureServices'* method in the  *'Startup.cs'* file to inject the *'RollDice'* class into our web API controller:
+Using the interface in the class library, we'll modify the **'ConfigureServices'** method in the **'Startup.cs'** file to inject the **'RollDice'** class into our web API controller:
 
 ```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    ...
 
+    services.AddSingleton<IRollDice, RollDice>();
+}
 ```
 
 Because we've been adding each project to the solution file, we can now use one command to build all of the projects and check for any errors:
@@ -326,7 +331,7 @@ Because we've been adding each project to the solution file, we can now use one 
 dotnet build DiceRollerApi.sln
 ```
 
-Finally, lets use the .NET CLI to locally run our web API!
+Now let's use the .NET CLI to locally run our web API!
 
 ```terminal
 dotnet run -p DiceRoller.WebApi/DiceRoller.WebApi.csproj
@@ -341,7 +346,7 @@ dotnet run -p DiceRoller.WebApi/DiceRoller.WebApi.csproj
     caption='Run the web API project'
 %}
 
-Now that the web API is running locally, we can navigate to ***https://localhost:5001/swagger*** and use [Swagger](https://swagger.io) to check if our endpoint is working the way we expect:
+Now that the web API is running locally, we can navigate to **https://localhost:5001/swagger** and use [Swagger](https://swagger.io) to check if our endpoint is working the way we expect:
 
 {%
     include image.html
@@ -361,4 +366,4 @@ Now that the web API is running locally, we can navigate to ***https://localhost
     caption='The response from the request to the endpoint'
 %}
 
-I hope this demonstrates how you can use only the .NET CLI, Visual Studio Code and the C# extension to build a web API!
+I hope this demonstrates how you can use only the .NET CLI and Visual Studio Code to build a web API!
