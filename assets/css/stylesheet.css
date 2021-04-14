@@ -342,9 +342,10 @@ section.about-the-author {
    page elements here
 */
 
-.highlighter-rouge {
+div.highlight {
   font-family:'Courier New', Courier, monospace;
   overflow: auto;
+  padding: 10px;
 }
 
 .text-center {
