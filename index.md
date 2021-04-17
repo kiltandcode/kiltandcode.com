@@ -12,8 +12,8 @@ title: "Kilt and Code is the personal website of Steven McLintock"
 
   {%
     include image.html
-    file='me.jpg'
-    alt='Steven McLintock'
+    file='cartoon-scottish-developer.png'
+    alt='Kilt and Code'
   %}
 </section>
 
