@@ -4,7 +4,7 @@ date: 2021-03-25 8:30:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/03/kiltandcode-design-2019-V1.png
-icon: steven.png
+icon: kiltandcode.png
 tags: lifestyle
 ---
 

@@ -16,7 +16,7 @@ site-manifest: '/site.webmanifest'
 motif:
   src: '/assets/img/cartoon-scottish-face.png'
   width: '83'
-  height: '89'
+  height: '90'
 
 # Header menu
 header-menu:
@@ -36,4 +36,11 @@ about-the-author:
   src: '/assets/img/me-small.jpg'
   width: '100'
   height: '100'
-  caption: 'Kilt and Code is the personal website of <a href="/about">Steven McLintock</a>, a Scottish software developer living in Stratford, Ontario. Steven primarily uses <a href="https://dotnet.microsoft.com/">.NET</a>, C# and <a href="https://angular.io/">Angular</a> and has been working as a developer since 2006. <a href="mailto:stevenmclintock@fastmail.com">Get in touch!</a>'
+  caption: 'Kilt and Code is the personal website of 
+  ..<a href="/about">Steven McLintock</a>, a 
+  ..Scottish software developer living in 
+  ..Stratford, Ontario. Steven primarily uses 
+  ..<a href="https://dotnet.microsoft.com/">.NET</a>, 
+  ..C# and <a href="https://angular.io/">Angular</a> 
+  ..and has been working as a developer since 2006. 
+  ..<a href="mailto:stevenmclintock@fastmail.com">Get in touch!</a>'
