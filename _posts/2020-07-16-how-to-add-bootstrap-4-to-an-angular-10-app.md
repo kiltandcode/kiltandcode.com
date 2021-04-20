@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/07/bootstrap-angular.png
 icon: angular.png
-tags: angular bootstrap popular
+tags: angular bootstrap
 ---
 
 I was trying to add Bootstrap 4 to an Angular 10 app recently and it was more difficult than I expected. We're able to add Bootstrap 4 easily using [NPM](https://www.npmjs.com/) *(Node Package Manager)*, but we still need to install and configure the scripts and dependencies. This can result in a visit to [StackOverflow](https://stackoverflow.com/) which shouldn't be necessary.

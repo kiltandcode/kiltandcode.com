@@ -320,14 +320,9 @@ summary.article + summary.article {
   margin-bottom: 5px;
 }
 
-/* We need a few styles for the 
-   'About the Author' section at the 
-   bottom of the post template
-*/
-
-section.about-the-author {
-  margin-top: 70px;
-  text-align: center;
+/* Style the related posts */
+section.related-posts h2 {
+  margin: 70px 0 50px 0;
 }
 
 /* Add styles for miscellaneous 

@@ -1,0 +1,49 @@
+{% assign related-posts-enabled = site.data.settings.related-posts.enabled | default : false %}
+{% assign related-posts-header = site.data.settings.related-posts.header | default : '' %}
+{% assign related-posts-limit = site.data.settings.related-posts.limit | default : 3 %}
+{% assign related-posts-none = site.data.settings.related-posts.none | default : '' %}
+
+{% if related-posts-enabled and page.tags.size > 0 %}
+<section class="related-posts">
+    <h2 class="text-center">{{ related-posts-header }}</h2>
+    
+    {% assign relatedPosts = 0 %}
+
+    {% for post in site.posts %}
+        {% assign matches = 0 %}
+
+        {% for tag in post.tags %}
+            {% if post.url != page.url %}
+                {% if page.tags contains tag %}
+                    {% assign matches = matches | plus: 1 %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        
+        {% if matches > 0 %}
+            {%
+                include article-summary.html
+                url=post.url
+                title=post.title
+                date=post.date
+                icon=post.icon
+                excerpt=post.excerpt
+            %}
+
+            {% assign relatedPosts = relatedPosts | plus: 1 %}
+
+            {% if relatedPosts >= related-posts-limit %}
+                {% break %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    {% if relatedPosts == 0 %}
+    <p class="text-center">
+        <small>
+            {{ related-posts-none }}
+        </small>
+    </p>
+    {% endif %}
+</div>
+{% endif %}
