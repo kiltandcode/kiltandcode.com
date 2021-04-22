@@ -1,11 +1,6 @@
-{% assign related-posts-enabled = site.data.settings.related-posts.enabled | default : false %}
-{% assign related-posts-header = site.data.settings.related-posts.header | default : '' %}
-{% assign related-posts-limit = site.data.settings.related-posts.limit | default : 3 %}
-{% assign related-posts-none = site.data.settings.related-posts.none | default : '' %}
-
-{% if related-posts-enabled and page.tags.size > 0 %}
+{% if site.related-posts.enabled and page.tags.size > 0 %}
 <section class="related-posts">
-    <h2 class="text-center">{{ related-posts-header }}</h2>
+    <h2 class="text-center">{{ site.related-posts.header }}</h2>
     
     {% assign relatedPosts = 0 %}
 
@@ -32,7 +27,7 @@
 
             {% assign relatedPosts = relatedPosts | plus: 1 %}
 
-            {% if relatedPosts >= related-posts-limit %}
+            {% if relatedPosts >= site.related-posts.limit %}
                 {% break %}
             {% endif %}
         {% endif %}
@@ -41,7 +36,7 @@
     {% if relatedPosts == 0 %}
     <p class="text-center">
         <small>
-            {{ related-posts-none }}
+            {{ site.related-posts.none }}
         </small>
     </p>
     {% endif %}

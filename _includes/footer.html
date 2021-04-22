@@ -1,7 +1,7 @@
 <footer>
   <nav>
     <ul>
-        {% for item in site.data.settings.footer-menu %}
+        {% for item in site.footer-menu %}
         {% assign page-url = page.url | remove: '/' %}
         {% assign item-url = item.url | remove: '/' %}
 

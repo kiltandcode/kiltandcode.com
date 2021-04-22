@@ -1,9 +1,6 @@
-{% assign motif-src = site.data.settings.motif.src | default : '' %}
-{% assign motif-width = site.data.settings.motif.width | default : '' %}
-{% assign motif-height = site.data.settings.motif.height | default : '' %}
 <header>
-    {% if motif-src.size > 0 and motif-width.size > 0 and motif-height.size > 0 %}
-    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ motif-src }}" alt="{{ site.title }}" width="{{ motif-width }}" height="{{ motif-height }}" /></a>
+    {% if site.motif.src.size > 0 and site.motif.width.size > 0 and site.motif.height.size > 0 %}
+    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.motif.src }}" alt="{{ site.title }}" width="{{ site.motif.width }}" height="{{ site.motif.height }}" /></a>
     {% endif %}
     <section class="logo-title">
         <a href="{{ site.baseurl }}/">{{ site.title }}</a>
@@ -11,7 +8,7 @@
 
     <nav>
         <ul>
-            {% for item in site.data.settings.header-menu %}
+            {% for item in site.header-menu %}
             {% assign page-url = page.url | remove: '/' %}
             {% assign item-url = item.url | remove: '/' %}
     

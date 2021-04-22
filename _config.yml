@@ -1,16 +1,60 @@
-# Domain name
+# Site settings
 baseurl: ''
 url: 'https://www.kiltandcode.com'
+title: 'Kilt and Code'
+description:	 'The personal website of Steven McLintock'
+author: 'Steven McLintock'
 
 # Build settings
+permalink: /:year/:month/:day/:title/
+plugins: [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-permalink: /:year/:month/:day/:title/
-plugins: [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-# Customize atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'Kilt and Code'
-description:	       'The personal website of Steven McLintock'
-author:              'Steven McLintock'
+# Stylesheets
+stylesheets:
+  - '/assets/css/stylesheet.css'
+  - '/assets/css/syntax.css'
+
+# Google Analytics
+google-analytics:
+  enabled: true
+  id: 'UA-140918235-1'
+
+# The primary language used by the website
+language: 'en'
+
+# Favicon and icons for iOS, Android
+# These should ideally be located in the root directory
+apple-touch-icon: '/apple-touch-icon.png'
+favicon-32: '/favicon-32x32.png'
+favicon-16: '/favicon-16x16.png'
+site-manifest: '/site.webmanifest'
+
+# If you are not using a motif, 
+# please set each value as an empty string
+motif:
+  src: '/assets/img/cartoon-scottish-face.png'
+  width: '83'
+  height: '90'
+
+# Header menu
+header-menu:
+- { name: 'About', url: '/about' }
+- { name: 'Articles', url: '/articles' }
+
+# Footer menu
+footer-menu:
+- { name: 'Home', url: '/' }
+- { name: 'About', url: '/about' }
+- { name: 'Articles', url: '/articles' }
+- { name: 'RSS', url: '/feed.xml' }
+
+# Related posts (only works if you use tags)
+related-posts:
+  enabled: true
+  header: 'More articles like this...'
+  limit: 3
+  none: 'We couldn''t find any similar articles!'
