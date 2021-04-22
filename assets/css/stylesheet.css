@@ -252,8 +252,9 @@ header nav ul li a:hover {
   color: #333;
 }
 
-section.logo-title {
+header section.logo-title a {
   font-size: 1.3rem;
+  font-weight: bold;
   line-height: 1.3;
 }
 
