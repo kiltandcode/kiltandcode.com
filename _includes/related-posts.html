@@ -1,6 +1,6 @@
 {% if site.related-posts.enabled and page.tags.size > 0 %}
 <section class="related-posts">
-    <h2 class="text-center">{{ site.related-posts.header }}</h2>
+    <h2 class="text-center">{{ site.related-posts.header-text }}</h2>
     
     {% assign relatedPosts = 0 %}
 
@@ -36,7 +36,7 @@
     {% if relatedPosts == 0 %}
     <p class="text-center">
         <small>
-            {{ site.related-posts.none }}
+            {{ site.related-posts.no-related-articles-text }}
         </small>
     </p>
     {% endif %}

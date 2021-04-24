@@ -58,12 +58,13 @@ footer-menu:
 
 # Articles
 articles:
-  show-excerpt: true
-  read-more: 'Read more'
+  excerpt-enabled: true
+  read-more-enabled: true
+  read-more-text: 'Read more'
 
 # Related posts (only works if you use tags)
 related-posts:
   enabled: true
-  header: 'More articles like this...'
+  header-text: 'More articles like this...'
   limit: 3
-  none: 'We couldn''t find any similar articles!'
+  no-related-articles-text: 'We couldn''t find any similar articles!'

@@ -19,8 +19,8 @@
         <small><em>{% include written-on.html date=include.date %}</em></small>
     </section>
     
-    {%if site.articles.show-excerpt %}
-    <p>{{ excerpt | strip_html | normalize_whitespace | truncate: 300 | escape }} <a href="{{ site.baseurl }}{{ url }}">{{ site.articles.read-more }}</a></p>
+    {% if site.articles.excerpt-enabled %}
+    <p>{{ excerpt | strip_html | normalize_whitespace | truncate: 300 | escape }}{% if site.articles.read-more-enabled %} <a href="{{ site.baseurl }}{{ url }}">{{ site.articles.read-more-text }}</a>{% endif %}</p>
     {% endif %}
 </summary>
 {% endif %}
