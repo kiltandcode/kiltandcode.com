@@ -2,12 +2,12 @@
 baseurl: ''
 url: 'https://www.kiltandcode.com'
 title: 'Kilt and Code'
-description:	 'The personal website of Steven McLintock'
+description: 'The personal website of Steven McLintock'
 author: 'Steven McLintock'
 
 # Build settings
 permalink: /:year/:month/:day/:title/
-plugins: [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+plugins: [ jekyll-sitemap, jekyll-feed, jekyll-seo-tag ]
 markdown: kramdown
 kramdown:
   input: GFM
@@ -33,12 +33,16 @@ favicon-32: '/favicon-32x32.png'
 favicon-16: '/favicon-16x16.png'
 site-manifest: '/site.webmanifest'
 
-# If you are not using a motif, 
-# please set each value as an empty string
-motif:
+# The logo motif
+logo-motif:
+  enabled: true
   src: '/assets/img/cartoon-scottish-face.png'
   width: '83'
   height: '90'
+
+# The logo title
+logo-title:
+  enabled: true
 
 # Header menu
 header-menu:
@@ -51,6 +55,11 @@ footer-menu:
 - { name: 'About', url: '/about' }
 - { name: 'Articles', url: '/articles' }
 - { name: 'RSS', url: '/feed.xml' }
+
+# Articles
+articles:
+  show-excerpt: true
+  read-more: 'Read more'
 
 # Related posts (only works if you use tags)
 related-posts:

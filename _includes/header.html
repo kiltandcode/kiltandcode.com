@@ -1,10 +1,13 @@
 <header>
-    {% if site.motif.src.size > 0 and site.motif.width.size > 0 and site.motif.height.size > 0 %}
-    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.motif.src }}" alt="{{ site.title }}" width="{{ site.motif.width }}" height="{{ site.motif.height }}" /></a>
+    {% if site.logo-motif.enabled and site.logo-motif.src.size > 0 and site.logo-motif.width.size > 0 and site.logo-motif.height.size > 0 %}
+    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.logo-motif.src }}" alt="{{ site.title }}" width="{{ site.logo-motif.width }}" height="{{ site.logo-motif.height }}" /></a>
     {% endif %}
+
+    {% if site.logo-title.enabled %}
     <section class="logo-title">
         <a href="{{ site.baseurl }}/">{{ site.title }}</a>
     </section>
+    {% endif %}
 
     <nav>
         <ul>

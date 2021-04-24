@@ -107,8 +107,23 @@ h6 {
   font-size: 120%;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  border-bottom: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+th {
+  border-bottom: 1px solid #d3d3d3;
+  font-weight: bold;
+}
+
 th, td {
-  padding: 10px;
+  padding: 15px;
+  text-align: left;
+  vertical-align: top;
 }
 
 small {
@@ -125,24 +140,26 @@ em, i {
 
 ul { 
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 30px;
 }
 
 ol { 
   list-style-type: decimal;
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 30px;
 }
 
 ul ul, ol ul { 
   list-style-type: circle;
-  list-style-position: inside;
-  margin-left: 15px;
+  list-style-position: outside;
+  margin-left: 30px;
 }
 
 ol ol, ul ol { 
   list-style-type: lower-latin;
-  list-style-position: inside;
-  margin-left: 15px;
+  list-style-position: outside;
+  margin-left: 30px;
 }
 
 hr {
@@ -237,6 +254,10 @@ header {
 header a {
   font-weight: normal;
   border-bottom: none;
+}
+
+header nav ul {
+  margin-left: 0;
 }
 
 header nav ul li {
