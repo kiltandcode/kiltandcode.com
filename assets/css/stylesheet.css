@@ -274,13 +274,9 @@ header nav ul li a:hover {
 }
 
 header section.logo-title {
-  font-family: 'Cedarville Cursive', cursive;
-  font-size: 1.3rem;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.2rem;
   line-height: 1.3;
-}
-
-header section.logo-title a {
-  font-weight: bold;
 }
 
 footer {
