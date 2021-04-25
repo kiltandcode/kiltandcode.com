@@ -12,14 +12,7 @@
     <nav>
         <ul>
             {% for item in site.header-menu %}
-            {% assign page-url = page.url | remove: '/' %}
-            {% assign item-url = item.url | remove: '/' %}
-    
-            {% if page-url == item-url %}
-                <li><small><s><a href="{{ item.url }}">{{ item.name }}</a></s></small></li>
-            {% else %}
-                <li><small><a href="{{ item.url }}">{{ item.name }}</a></small></li>
-            {% endif %}
+            <li><small><a href="{{ item.url }}">{{ item.name }}</a></small></li>
             {% endfor %}
         </ul>
     </nav>
