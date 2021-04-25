@@ -273,10 +273,14 @@ header nav ul li a:hover {
   color: #333;
 }
 
-header section.logo-title a {
+header section.logo-title {
+  font-family: 'Cedarville Cursive', cursive;
   font-size: 1.3rem;
-  font-weight: bold;
   line-height: 1.3;
+}
+
+header section.logo-title a {
+  font-weight: bold;
 }
 
 footer {
