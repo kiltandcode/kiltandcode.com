@@ -1,15 +1,8 @@
 <footer>
   <nav>
     <ul>
-        {% for item in site.data.settings.footer-menu %}
-        {% assign page-url = page.url | remove: '/' %}
-        {% assign item-url = item.url | remove: '/' %}
-
-        {% if page-url == item-url %}
-            <li><small><s><a href="{{ item.url }}">{{ item.name }}</a></s></small></li>
-        {% else %}
-            <li><small><a href="{{ item.url }}">{{ item.name }}</a></small></li>
-        {% endif %}
+        {% for item in site.footer-menu %}
+        <li><small><a href="{{ item.url }}">{{ item.name }}</a></small></li>
         {% endfor %}
     </ul>
   </nav>

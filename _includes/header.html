@@ -1,25 +1,18 @@
-{% assign motif-src = site.data.settings.motif.src | default : '' %}
-{% assign motif-width = site.data.settings.motif.width | default : '' %}
-{% assign motif-height = site.data.settings.motif.height | default : '' %}
 <header>
-    {% if motif-src.size > 0 and motif-width.size > 0 and motif-height.size > 0 %}
-    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ motif-src }}" alt="{{ site.title }}" width="{{ motif-width }}" height="{{ motif-height }}" /></a>
+    {% if site.logo-motif.enabled and site.logo-motif.src.size > 0 and site.logo-motif.width.size > 0 and site.logo-motif.height.size > 0 %}
+    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.logo-motif.src }}" alt="{{ site.title }}" width="{{ site.logo-motif.width }}" height="{{ site.logo-motif.height }}" /></a>
     {% endif %}
+
+    {% if site.logo-title.enabled %}
     <section class="logo-title">
         <a href="{{ site.baseurl }}/">{{ site.title }}</a>
     </section>
+    {% endif %}
 
     <nav>
         <ul>
-            {% for item in site.data.settings.header-menu %}
-            {% assign page-url = page.url | remove: '/' %}
-            {% assign item-url = item.url | remove: '/' %}
-    
-            {% if page-url == item-url %}
-                <li><small><s><a href="{{ item.url }}">{{ item.name }}</a></s></small></li>
-            {% else %}
-                <li><small><a href="{{ item.url }}">{{ item.name }}</a></small></li>
-            {% endif %}
+            {% for item in site.header-menu %}
+            <li><small><a href="{{ item.url }}">{{ item.name }}</a></small></li>
             {% endfor %}
         </ul>
     </nav>

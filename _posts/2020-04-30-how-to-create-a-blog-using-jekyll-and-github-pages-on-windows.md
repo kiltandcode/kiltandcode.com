@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/04/jekyll-logo.png
 icon: jekyll.png
-tags: jekyll github-pages popular
+tags: jekyll github-pages
 ---
 
 Nearly a year ago I migrated from the popular blogging platform [WordPress](https://wordpress.org) to the static site generator [Jekyll](https://jekyllrb.com). Why am I and thousands of other bloggers deciding to move to a static site generator? It's a no-brainer! Why should we install security updates, manage plugins and tune the performance of a website so our pages load fast? Blogging should be all about the writing!
