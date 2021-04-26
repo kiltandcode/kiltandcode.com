@@ -285,13 +285,17 @@ footer {
   text-align: center;
 }
 
+footer a {
+  font-weight: normal;
+  border-bottom: none;
+}
+
 footer nav {
   margin-bottom: 20px;
 }
 
-footer a {
-  font-weight: normal;
-  border-bottom: none;
+footer nav ul {
+  margin-left: 0;
 }
 
 footer nav ul li {
