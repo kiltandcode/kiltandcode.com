@@ -1,44 +1,44 @@
-- icon: angular
+angular:
   src: /assets/img/icons/angular.png
 
-- icon: azure
+azure:
   src: /assets/img/icons/azure.png
 
-- icon: csharp
+csharp:
   src: /assets/img/icons/csharp.png
 
-- icon: dotnetcore
+dotnetcore:
   src: /assets/img/icons/dotnetcore.png
 
-- icon: jekyll
+jekyll:
   src: /assets/img/icons/jekyll.png
 
-- icon: kiltandcode
+kiltandcode:
   src: /assets/img/icons/kiltandcode.png
 
-- icon: mediatr
+mediatr:
   src: /assets/img/icons/mediatr.png
 
-- icon: moq
+moq:
   src: /assets/img/icons/moq.png
 
-- icon: n64-controller
+n64-controller:
   src: /assets/img/icons/n64-controller.png
 
-- icon: powershell
+powershell:
   src: /assets/img/icons/powershell.png
 
-- icon: puppeteer
+puppeteer:
   src: /assets/img/icons/puppeteer.png
 
-- icon: retro-windows
+retro-windows:
   src: /assets/img/icons/retro-windows.png
 
-- icon: sql-server
+sql-server:
   src: /assets/img/icons/sql-server.png
 
-- icon: sqlite
+sqlite:
   src: /assets/img/icons/sqlite.png
 
-- icon: vscode
+vscode:
   src: /assets/img/icons/vscode.png

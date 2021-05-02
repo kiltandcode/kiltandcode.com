@@ -4,7 +4,7 @@ date: 2021-04-30 19:00:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/04/ssms-generate-scripts.png
-icon: sql-server.png
+icon: sql-server
 tags: sql-server ssms
 ---
 

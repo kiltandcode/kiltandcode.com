@@ -4,7 +4,7 @@ date: 2021-02-15 17:28:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/02/mediatr_gradient_128x128.png
-icon: mediatr.png
+icon: mediatr
 tags: csharp mediatr
 ---
 

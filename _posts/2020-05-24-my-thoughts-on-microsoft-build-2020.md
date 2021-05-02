@@ -4,7 +4,7 @@ date: 2020-05-24 10:15:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/05/msbuild-session-catalog.png
-icon: dotnetcore.png
+icon: dotnetcore
 tags: microsoft dotnet-core
 ---
 

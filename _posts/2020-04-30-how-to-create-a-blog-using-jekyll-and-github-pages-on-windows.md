@@ -4,7 +4,7 @@ date: 2020-04-30 21:25:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/04/jekyll-logo.png
-icon: jekyll.png
+icon: jekyll
 tags: jekyll github-pages
 ---
 

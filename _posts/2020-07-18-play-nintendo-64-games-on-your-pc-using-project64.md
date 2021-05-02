@@ -4,7 +4,7 @@ date: 2020-07-18 21:45:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/07/playing-n64-on-the-pc-using-project64.jpg
-icon: n64-controller.png
+icon: n64-controller
 tags: retro-gaming n64
 ---
 

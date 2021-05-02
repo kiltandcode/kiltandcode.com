@@ -4,7 +4,7 @@ date: 2020-02-02 8:57:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/02/vscode-extensions.png
-icon: vscode.png
+icon: vscode
 tags: vscode
 ---
 

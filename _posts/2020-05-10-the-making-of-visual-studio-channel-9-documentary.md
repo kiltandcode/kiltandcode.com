@@ -4,7 +4,7 @@ date: 2020-05-10 14:37:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/05/visual-studio-97.png
-icon: retro-windows.png
+icon: retro-windows
 tags: microsoft revisiting
 ---
 

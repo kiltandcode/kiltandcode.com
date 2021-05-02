@@ -4,7 +4,7 @@ date: 2019-06-24 20:13:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/06/msfrontpage-website-example.png
-icon: retro-windows.png
+icon: retro-windows
 tags: microsoft revisiting
 ---
 

@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 permalink: /using-azure-batch-to-orchestrate-and-execute-code-at-large-scale/
 image: /assets/img/2019/03/6_batchnodes.png
-icon: azure.png
+icon: azure
 tags: azure azure-batch
 ---
 

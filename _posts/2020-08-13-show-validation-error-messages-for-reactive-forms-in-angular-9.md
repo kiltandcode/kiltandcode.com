@@ -4,7 +4,7 @@ date: 2020-08-13 21:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2020/06/angular-logo.png
-icon: angular.png
+icon: angular
 tags: angular
 ---
 
