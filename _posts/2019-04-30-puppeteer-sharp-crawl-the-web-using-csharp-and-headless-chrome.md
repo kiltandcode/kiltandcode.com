@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 permalink: /puppeteer-sharp-crawl-the-web-using-csharp-and-headless-chrome/
 image: /assets/img/2019/04/puppeteerdevtools.png
-icon: puppeteer.png
+icon: puppeteer
 tags: csharp puppeteer-sharp
 ---
 

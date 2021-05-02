@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 permalink: /how-to-use-azure-batch-job-schedule/
 image: /assets/img/2019/03/8_configjobconfigtask.png
-icon: azure.png
+icon: azure
 tags: azure azure-batch
 ---
 

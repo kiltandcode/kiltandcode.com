@@ -5,7 +5,7 @@ author: "Steven McLintock"
 layout: post
 permalink: /azure-logic-apps-how-to-use-microsofts-serverless-codeless-integration-platform/
 image: /assets/img/2019/03/5-visualdesigner-getstarted.png
-icon: azure.png
+icon: azure
 tags: azure logic-apps
 ---
 

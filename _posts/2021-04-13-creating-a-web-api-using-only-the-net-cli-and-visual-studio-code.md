@@ -4,7 +4,7 @@ date: 2021-04-13 20:15:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/04/terminal-dotnet.png
-icon: vscode.png
+icon: vscode
 tags: dotnet vscode csharp
 ---
 

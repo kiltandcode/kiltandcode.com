@@ -2,5 +2,8 @@
 {% assign alt = include.alt | default : '' %}
 
 {% if icon.size > 0 and alt.size > 0 %}
-<img src="{{ site.baseurl }}/assets/img/icons/{{ icon }}" alt="{{ alt }}" />
+{% assign src = site.data.icons[icon].src | default : '' %}
+{% if src.size > 0 %}
+<img src="{{ site.baseurl }}{{ src }}" alt="{{ alt }}" />
+{% endif %}
 {% endif %}

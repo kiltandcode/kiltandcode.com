@@ -4,7 +4,7 @@ date: 2019-06-16 11:13:01 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2019/06/test-explorer.png
-icon: csharp.png
+icon: csharp
 tags: csharp unit-testing
 ---
 

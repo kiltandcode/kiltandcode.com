@@ -4,7 +4,7 @@ date: 2021-03-31 21:00:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/03/sql-server-logo.png
-icon: sql-server.png
+icon: sql-server
 tags: sql-server
 ---
 

@@ -1,0 +1,44 @@
+angular:
+  src: /assets/img/icons/angular.png
+
+azure:
+  src: /assets/img/icons/azure.png
+
+csharp:
+  src: /assets/img/icons/csharp.png
+
+dotnetcore:
+  src: /assets/img/icons/dotnetcore.png
+
+jekyll:
+  src: /assets/img/icons/jekyll.png
+
+kiltandcode:
+  src: /assets/img/icons/kiltandcode.png
+
+mediatr:
+  src: /assets/img/icons/mediatr.png
+
+moq:
+  src: /assets/img/icons/moq.png
+
+n64-controller:
+  src: /assets/img/icons/n64-controller.png
+
+powershell:
+  src: /assets/img/icons/powershell.png
+
+puppeteer:
+  src: /assets/img/icons/puppeteer.png
+
+retro-windows:
+  src: /assets/img/icons/retro-windows.png
+
+sql-server:
+  src: /assets/img/icons/sql-server.png
+
+sqlite:
+  src: /assets/img/icons/sqlite.png
+
+vscode:
+  src: /assets/img/icons/vscode.png

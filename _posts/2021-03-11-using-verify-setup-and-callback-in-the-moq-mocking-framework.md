@@ -4,7 +4,7 @@ date: 2021-03-11 14:00:00 +00:00
 author: "Steven McLintock"
 layout: post
 image: /assets/img/2021/03/moq.png
-icon: moq.png
+icon: moq
 tags: csharp unit-testing moq
 ---
 
