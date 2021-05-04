@@ -1,7 +1,7 @@
 ---
 title: "Auto-Generate Insert Statements With Data Using SQL Server Management Studio"
 date: 2021-04-30 19:00:00:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2021/04/ssms-generate-scripts.png
 icon: sql-server

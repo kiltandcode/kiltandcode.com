@@ -1,7 +1,7 @@
 ---
 title: "How to use Azure Batch Job Schedule"
 date: 2019-03-03 16:36:27 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 permalink: /how-to-use-azure-batch-job-schedule/
 image: /assets/img/2019/03/8_configjobconfigtask.png

@@ -1,7 +1,7 @@
 ---
 title: "Azure Logic Apps: How to use Microsoft&#8217;s Serverless &#038; Codeless Integration Platform"
 date: 2019-03-24 21:19:32 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 permalink: /azure-logic-apps-how-to-use-microsofts-serverless-codeless-integration-platform/
 image: /assets/img/2019/03/5-visualdesigner-getstarted.png

@@ -1,6 +1,7 @@
 {% assign title = include.title | default : '' %}
 {% assign url = include.url | default : '' %}
 {% assign icon = include.icon | default : '' %}
+{% assign author = include.author | default : '' %}
 {% assign excerpt = include.excerpt | default : '' %}
 
 {% if title.size > 0 and url.size > 0 and icon.size > 0 and excerpt.size > 0 %}
@@ -15,8 +16,12 @@
         <h4>
             <a href="{{ site.baseurl }}{{ url }}">{{ title }}</a>
         </h4>
-    
-        <small><em>{% include written-on.html date=include.date %}</em></small>
+
+        {%
+            include written-on.html
+            date=include.date
+            author=author
+        %}
     </section>
     
     {% if site.articles.excerpt-enabled %}

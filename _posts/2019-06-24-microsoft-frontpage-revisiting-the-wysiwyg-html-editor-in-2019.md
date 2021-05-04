@@ -1,7 +1,7 @@
 ---
 title: "Microsoft FrontPage: Revisiting the WYSIWYG HTML Editor in 2019"
 date: 2019-06-24 20:13:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2019/06/msfrontpage-website-example.png
 icon: retro-windows

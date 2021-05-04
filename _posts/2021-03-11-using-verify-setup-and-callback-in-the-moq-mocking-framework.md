@@ -1,7 +1,7 @@
 ---
 title: "Using Verify, Setup and Callback in the Moq Mocking Framework"
 date: 2021-03-11 14:00:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2021/03/moq.png
 icon: moq

@@ -10,6 +10,7 @@ title: "All Articles"
         title=post.title
         date=post.date
         icon=post.icon
+        author=post.author
         excerpt=post.excerpt
     %}
 {% endfor %}

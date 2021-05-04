@@ -1,7 +1,7 @@
 ---
 title: "How to Create an Angular 9 App From Scratch"
 date: 2020-06-07 18:55:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2020/06/angular-logo.png
 icon: angular
