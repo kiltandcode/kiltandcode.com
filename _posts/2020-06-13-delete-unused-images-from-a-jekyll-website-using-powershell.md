@@ -1,7 +1,7 @@
 ---
 title: "Delete Unused Images from a Jekyll Website using Powershell"
 date: 2020-06-13 19:55:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2020/06/powershell-logo.png
 icon: powershell

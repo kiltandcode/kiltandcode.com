@@ -1,7 +1,7 @@
 ---
 title: "Play Nintendo 64 Games on Your PC Using Project64"
 date: 2020-07-18 21:45:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2020/07/playing-n64-on-the-pc-using-project64.jpg
 icon: n64-controller

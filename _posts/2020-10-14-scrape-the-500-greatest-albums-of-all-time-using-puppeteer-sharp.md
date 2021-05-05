@@ -1,7 +1,7 @@
 ---
 title: "Scrape the 500 Greatest Albums of All Time using Puppeteer Sharp"
 date: 2020-10-14 19:00:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2019/04/puppeteer-logo.png
 icon: puppeteer

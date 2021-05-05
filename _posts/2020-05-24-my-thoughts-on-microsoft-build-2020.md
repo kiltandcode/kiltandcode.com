@@ -1,7 +1,7 @@
 ---
 title: "My Thoughts on Microsoft Build 2020"
 date: 2020-05-24 10:15:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2020/05/msbuild-session-catalog.png
 icon: dotnetcore

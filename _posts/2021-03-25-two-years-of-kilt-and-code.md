@@ -1,7 +1,7 @@
 ---
 title: "2 Years of Kilt and Code"
 date: 2021-03-25 8:30:00:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2021/03/kiltandcode-design-2019-V1.png
 icon: kiltandcode

@@ -63,9 +63,19 @@ articles:
   read-more-enabled: true
   read-more-text: 'Read more'
 
+# Post Icons
+icons:
+  enabled: true
+
 # Related posts (only works if you use tags)
 related-posts:
   enabled: true
   header-text: 'More articles like this...'
   limit: 3
   no-related-articles-text: 'We couldn''t find any similar articles!'
+
+# Written on (post info displayed underneath the H1)
+written-on:
+  enabled: true
+  by-text: 'By'
+  on-text: 'on'

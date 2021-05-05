@@ -1,7 +1,7 @@
 ---
 title: "Creating a Web API Using Only the .NET CLI and Visual Studio Code"
 date: 2021-04-13 20:15:00:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2021/04/terminal-dotnet.png
 icon: vscode

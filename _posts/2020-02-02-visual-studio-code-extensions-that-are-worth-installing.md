@@ -1,7 +1,7 @@
 ---
 title: "25+ Visual Studio Code Extensions That Are Worth Installing"
 date: 2020-02-02 8:57:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2020/02/vscode-extensions.png
 icon: vscode

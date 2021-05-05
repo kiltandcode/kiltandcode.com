@@ -1,7 +1,7 @@
 ---
 title: "Using Azure Batch to Orchestrate and Execute Code at Large-Scale"
 date: 2019-03-02 22:17:26 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 permalink: /using-azure-batch-to-orchestrate-and-execute-code-at-large-scale/
 image: /assets/img/2019/03/6_batchnodes.png

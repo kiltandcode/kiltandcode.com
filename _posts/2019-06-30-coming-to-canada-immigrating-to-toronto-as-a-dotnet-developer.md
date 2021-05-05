@@ -1,7 +1,7 @@
 ---
 title: "Coming to Canada: Immigrating to Toronto as a .NET Developer"
 date: 2019-06-30 22:00:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2019/06/canada-day.png
 icon: kiltandcode

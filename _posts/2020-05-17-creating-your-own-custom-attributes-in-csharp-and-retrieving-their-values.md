@@ -1,7 +1,7 @@
 ---
 title: "Creating Your Own Custom Attributes in C# and Retrieving Their Values"
 date: 2020-05-17 14:37:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2020/05/attribute-usage.png
 icon: csharp

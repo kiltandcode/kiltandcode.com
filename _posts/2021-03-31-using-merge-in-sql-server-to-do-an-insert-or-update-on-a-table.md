@@ -1,7 +1,7 @@
 ---
 title: "Using MERGE in SQL Server to do an INSERT or UPDATE on a Table"
 date: 2021-03-31 21:00:00:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2021/03/sql-server-logo.png
 icon: sql-server

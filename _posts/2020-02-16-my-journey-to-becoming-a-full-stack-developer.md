@@ -1,7 +1,7 @@
 ---
 title: "My Journey to Becoming a Full Stack Developer"
 date: 2020-02-16 9:46:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2020/02/cartoon-teenager-at-computer.jpg
 icon: kiltandcode

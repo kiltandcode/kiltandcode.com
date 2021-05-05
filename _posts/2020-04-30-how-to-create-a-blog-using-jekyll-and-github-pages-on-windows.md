@@ -1,7 +1,7 @@
 ---
 title: "How to Create a Blog Using Jekyll and GitHub Pages on Windows"
 date: 2020-04-30 21:25:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2020/04/jekyll-logo.png
 icon: jekyll

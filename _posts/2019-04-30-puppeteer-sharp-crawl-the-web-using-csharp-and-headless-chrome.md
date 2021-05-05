@@ -1,7 +1,7 @@
 ---
 title: "Puppeteer Sharp: Crawl the Web using C# and Headless Chrome"
 date: 2019-04-30 15:26:01 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 permalink: /puppeteer-sharp-crawl-the-web-using-csharp-and-headless-chrome/
 image: /assets/img/2019/04/puppeteerdevtools.png

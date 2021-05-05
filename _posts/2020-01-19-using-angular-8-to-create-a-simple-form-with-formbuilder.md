@@ -1,7 +1,7 @@
 ---
 title: "Using Angular 8 to Create a Simple Form with FormBuilder"
 date: 2020-01-19 11:53:00 +00:00
-author: "Steven McLintock"
+author: steven
 layout: post
 image: /assets/img/2020/01/2020-01-18 21_23_03-app.component.png
 icon: angular
