@@ -363,3 +363,11 @@ div.highlight {
 .text-center {
   text-align: center;
 }
+
+.top-bumper {
+  margin-top: 35px;
+}
+
+.bottom-bumper {
+  margin-bottom: 35px;
+}

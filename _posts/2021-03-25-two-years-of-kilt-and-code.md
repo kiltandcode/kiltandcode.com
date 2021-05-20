@@ -125,4 +125,4 @@ articles there's definitely a few improvements to be made in the *'All Articles'
 search and *'Related Articles'*.
 
 Anyway, those are all for another day. For today I would just like to say thank you for reading! If you'd like 
-to get in touch, feel free to [email me](mailto:stevenmclintock@fastmail.com).
+to get in touch, feel free to [email me](mailto:steven@kiltandcode.com).

@@ -15,4 +15,4 @@ I [immigrated from Glasgow, Scotland to Toronto, Ontario](https://www.kiltandcod
 
 When I'm not buried in [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/), I enjoy watching movies and shows on [Netflix](https://www.netflix.com/) and [Apple TV+](https://tv.apple.com/), reading [MacRumors](https://www.macrumors.com/), listening to podcasts and patiently waiting for the [Toronto Maple Leafs](https://www.nhl.com/mapleleafs) to win the [Stanley Cup](https://en.wikipedia.org/wiki/Stanley_Cup).
 
-I hope you enjoy my minimalist area of the internet! Please get in touch by emailing me at [stevenmclintock@fastmail.com](mailto:stevenmclintock@fastmail.com).
+I hope you enjoy my minimalist area of the internet! Please get in touch by emailing me at [steven@kiltandcode.com](mailto:steven@kiltandcode.com).
