@@ -364,4 +364,4 @@ That's it! You'll now be able to view your Jekyll blog at the address https://us
 
 I hope you enjoyed learning about Jekyll and how it can be used as a powerful, yet simple blogging platform.
 
-If you found this article useful, please let me know at [@kiltandcode](https://twitter.com/kiltandcode) or email me at [stevenmclintock@fastmail.com](mailto:stevenmclintock@fastmail.com). I look forward to reading your new Jekyll blog!
+If you found this article useful, please let me know at [@kiltandcode](https://twitter.com/kiltandcode) or email me at [steven@kiltandcode.com](mailto:steven@kiltandcode.com). I look forward to reading your new Jekyll blog!
