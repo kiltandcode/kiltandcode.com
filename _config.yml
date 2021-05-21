@@ -60,12 +60,13 @@ footer-menu:
 # Homepage
 homepage:
   header-text: 'Kilt and Code is the personal website of Steven McLintock'
-  intro-text: 'I''m a Scottish full stack developer based in Stratford, Ontario. I enjoy writing 
-              about the things I learn, primarily on the languages and frameworks I use on a daily 
-              basis. You can also read about 
-              <a href="{{ site.baseurl }}/2020/02/16/my-journey-to-becoming-a-full-stack-developer/">my journey to becoming a full stack developer</a>, 
-              <a href="{{ site.baseurl }}/2019/06/30/coming-to-canada-immigrating-to-toronto-as-a-dotnet-developer/">immigrating to Toronto as a .NET developer</a> 
-              and more in the <a href="{{ site.baseurl }}/articles">archives</a>.'
+  intro-text: '<a href="/about">Steven McLintock</a> is a Scottish full stack developer based in 
+              <a href="https://en.wikipedia.org/wiki/Stratford,_Ontario">Stratford, Ontario</a>. 
+              I enjoy writing about the things I learn, primarily on the languages and frameworks 
+              I use on a daily basis. You can also read about 
+              <a href="/2020/02/16/my-journey-to-becoming-a-full-stack-developer/">my journey to becoming a full stack developer</a>, 
+              <a href="/2019/06/30/coming-to-canada-immigrating-to-toronto-as-a-dotnet-developer/">immigrating to Toronto as a .NET developer</a> 
+              and more in the <a href="/articles">archives</a>.'
   intro-image: 'cartoon-scottish-developer.png'
   latest-articles-enabled: true
   latest-articles-title-text: 'Latest Articles'

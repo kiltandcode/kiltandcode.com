@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "About Steven"
 ---
 
 Kilt and Code is the personal website of Steven McLintock, a Scottish [full stack developer](https://www.kiltandcode.com/2020/02/16/my-journey-to-becoming-a-full-stack-developer/) who lives in Stratford, Ontario. I primarily use [.NET](https://dotnet.microsoft.com/), C# and [Angular](https://angular.io/) and I've been working as a developer since 2006.

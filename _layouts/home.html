@@ -46,7 +46,7 @@ layout: default
         %}
     {% endfor %}
 
-    {% if site.homepage.latest-articles-link-url.size > 0 and site.homepage.latest-articles-link-text.size > 0 %}
+    {% if site.homepage.latest-articles-link-enabled and site.homepage.latest-articles-link-url.size > 0 and site.homepage.latest-articles-link-text.size > 0 %}
     <section class="text-center top-bumper">
         <a href="{{ site.baseurl }}{{ site.homepage.latest-articles-link-url }}">{{ site.homepage.latest-articles-link-text }}</a>
     </section>
